@@ -1,0 +1,35 @@
+[colors]
+draw_bold_text_with_bright_colors = false 
+
+[colors.bright]
+black = "#353535"
+blue = "#627087"
+cyan = "#6a9798"
+green = "#7e9e66"
+magenta = "#766085"
+red = "#9c5147"
+white = "#cecece"
+yellow = "#a29e5d"
+
+[colors.cursor]
+cursor = "#816162"
+text = "#abadaf"
+
+[colors.normal]
+black = "#1c1c1c"
+blue = "#505659"
+cyan = "#536768"
+green = "#6c7e5f"
+magenta = "#544f58"
+red = "#7c534f"
+white = "#c3c4c2"
+yellow = "#7f7f5e"
+
+[colors.primary]
+background = "#1d1d1d"
+bright_foreground = "#eeeeee"
+foreground = "#b0b9ae"
+
+[colors.selection]
+background = "#b2ceee"
+text = "#080808"

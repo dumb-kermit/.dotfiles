@@ -1,0 +1,339 @@
+
+
+
+
+
+# normal = { family = "Input Nerd Font" }
+# normal = { family = "Input Mono Narrow", style = "Medium" }
+# italic = { family = "Input Mono Narrow", style = "Medium Italic" }
+# size = 18
+
+# normal = { family = "Illinois Mono" }
+# normal = { family = "RecMonoCS720 Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoCS720 Nerd Font", style = "Italic" }
+# bold = { family = "RecMonoCS720 Nerd Font",  style = "Bold" }
+# bold_italic = { family = "RecMonoCS720 Nerd Font",  style = "Bold Italic" }
+
+# normal = { family = "CallingCode Nerd Font", style = "Regular" }
+# italic = { family = "CallingCode Nerd Font", style = "Italic" }
+# normal = { family = "DSETypewriter Nerd Font" }
+
+# normal = { family = "MonaspiceRn Nerd Font" }
+# italic = { family = "MonaspiceXe Nerd Font", style = "Bold Italic" }
+
+# normal = { family = "MonoLisa", style = "Light" }
+# italic = { family = "MonoLisa", style = "Light Italic" }
+
+# normal = { family = "ElementaPro Nerd Font", style = "Regular" }
+# italic = { family = "ElementaPro Nerd Font", style = "Italic" }
+
+# normal = { family = "Operator Mono", style = "Bold" }
+# normal = { family = "OperatorMono Nerd Font" }
+# size = 21.00
+# size = 20.50
+# size = 18.50
+# size = 19.50
+
+# normal = { family = "Monaspace Xenon Var GO", style  = "Regular" }
+# normal = { family = "Vulf Mono", style  = "Regular" }
+
+# normal = { family = "Array Mono", style  = "Regular" }
+# italic = { family = "Array Mono", style  = "Regular Italic" }
+# bold = { family = "Array Mono", style  = "Regular" }
+# normal = { family = "Covik Sans Mono Demo" }
+# offset = { x = -2, y = 1 }
+# size = 15.00
+
+# normal = { family = "Comic Code Demo" }
+# size = 17.00
+# size = 15.75
+
+# normal = { family = "OperatorMonoSSmLig Nerd Font" }
+# normal = { family = "OperatorMonoSSmLig Nerd Font", style = "Black" }
+# italic = { family = "OperatorMonoSSmLig Nerd Font IT", style = "Black Italic" }
+
+# normal = { family = "MonoLisa", style = "SemiBold" }
+
+# normal = { family = "RecMonoCS428 Nerd Font" }
+# normal = { family = "RecMonoLN4304 Nerd Font" }
+# normal = { family = "RecMonoRX240XXX Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoRX240XXX Nerd Font", style = "Italic" }
+
+# normal = { family = "RecMonoCS468 Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoCS468 Nerd Font", style = "Italic" }
+# bold = { family = "RecMonoCS468 Nerd Font", style = "Regular" }
+
+# normal = { family = "Rec Mono RX354XXX", style = "Regular" }
+# italic = { family = "Rec Mono RX354XXX", style = "Italic" }
+# normal = { family = "RecMonoCS330 Nerd Font" }
+# normal = { family = "RecMonoCS620 Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoCS330 Nerd Font", style = "Regular" }
+# normal = { family = "RecMonoLN350 Nerd Font" }
+
+# normal = { family = "Rec Mono RX870", style = "Regular" }
+# italic = { family = "Rec Mono RX870", style = "Italic" }
+
+# normal = { family = "Recursive Mono Linear Static", style = "Black" }
+# italic = { family = "Recursive Mono Linear Static", style = "Black Italic" }
+# bold = { family = "Recursive Mono Linear Static", style = "Black" }
+
+# normal = { family = "Recursive DT", style = "Regular"}
+
+# normal = { family = "IFWSLA+VulfMono-Light", style = "Light" }
+# italic = { family = "IFWSLA+VulfMono-LightItalic", style = "LightItalic" }
+
+# normal = { family = "Vulf Mono", style = "Regular" }
+# italic = { family = "Vulf Mono", style = "Italic" }
+
+# normal = { family = "Rec Mono L400", style = "Regular" }
+# italic = { family = "Rec Mono L400", style = "Italic" }
+
+# normal = { family = "Rec Mono L680X", style = "Regular" }
+# italic = { family = "Rec Mono L680X", style = "Italic" }
+
+# normal = { family = "BlexMono Nerd Font", style = "Medium" }
+# italic = { family = "BlexMono Nerd Font", style = "Medium Italic" }
+
+# normal = { family = "Rec Mono Semicasual", style = "Regular"}
+# bold = { family = "Rec Mono Semicasual", style = "Regular"}
+# italic = { family = "Rec Mono Semicasual", style = "Italic"}
+
+# normal = { family = "AT Name Mono" }
+# italic = { family = "AT Name Mono", style = "Black Italic" }
+# size = 18.25
+
+# normal = { family = "AT Name Mono Variable Trial LS", style = "Regular" }
+# italic = { family = "AT Name Mono Variable Trial LS", style = "Regular Italic" }
+
+# normal = { family = "AT Name Mono Variable Trial GO", style = "Black" }
+# italic = { family = "AT Name Mono Variable Trial GO", style = "Regular Italic" }
+# normal = { family = "AT Name Mono Variable Trial S", style = "Regular" }
+# italic = { family = "AT Name Mono Variable Trial S", style = "Regular Italic" }
+
+# normal = { family = "RecMonoRM842X Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoRM842X Nerd Font", style = "Italic" }
+
+# normal = { family = "Monaspace Radon Var", style = "Light" }
+# italic = { family = "Monaspace Radon Var", style = "Light Italic" }
+
+# normal = { family = "Afrikola Regular", style = "Regular" }
+# normal = { family = "Afrikola Nerd Font", style = "Regular" }
+# normal = { family = "Afrikola Nerd Font", style = "Bold" }
+# normal = { family = "Afrikola Monospace 0_4", style = "Regular Formal" }
+
+# normal = { family = "VCTR Mono Trial v0.12", style = "Black" }
+# italic = { family = "VCTR Mono Trial v0.12", style = "Black Italic" }
+
+# normal = { family = "RecMonoLinear Nerd Font", style = "Bold" }
+# italic = { family = "RecMonoCasual Nerd Font", style = "Bold Italic" }
+# bold = { family = "RecMonoLinear Nerd Font", style = "Bold" }
+
+# normal = { family = "RecMonoCS565S Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoCS565S Nerd Font", style = "Italic" }
+
+# normal = { family = "Recursive Mono Casual Static", style = "Regular" }
+# bold = { family = "Recursive Mono Casual Static", style = "Regular" }
+# italic = { family = "Recursive Mono Casual Static", style = "Italic" }
+
+# normal = { family = "Recursive Mono Linear Static", style = "Black" }
+# italic = { family = "Recursive Mono Linear Static", style = "Black Italic" }
+# normal = { family = "RecMonoCS852SL Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoCS852SL Nerd Font", style = "Italic" }
+
+# normal = { family = "Rec Mono RM842X", style = "Regular" }
+# italic = { family = "Rec Mono RM842X", style = "Italic" }
+
+# normal = { family = "Shift TT", style = "Black" }
+# italic = { family = "Shift TT", style = "Black Italic" }
+
+# normal = { family = "RecMonoL880X Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoL880X Nerd Font", style = "Italic" }
+
+# offset = { x = -3, y = 1 }
+# offset = { x = -1, y = 3 }
+# offset = { x = -1, y = -2 }
+# size = 16.50
+# size = 16.75
+# size = 17.00
+# size = 17.25
+# size = 18.00
+# size = 19.00
+
+# normal = { family = "Rec Mono RX690", style = "Regular" }
+# italic = { family = "Rec Mono RX690", style = "Italic" }
+
+# normal = { family = "RecMonoLinear Nerd Font", style = "Regular" }
+# bold = { family = "RecMonoLinear Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoCasual Nerd Font", style = "Italic" }
+
+# bold = { family = "Recursive Mono Linear Static", style = "Bold" }
+
+# size = 15.00
+# size = 17.00
+# size = 17.50
+# size = 18.00
+# size = 18.75
+# size = 19.00
+# offset = { x = -1, y = 1 }
+
+# offset = { x = -3, y = 0 }
+# offset = { x = 0, y = -5 }
+# offset = { x = -2, y = 6 }
+
+# normal = { family = "Rec Mono LN4304" }
+# normal = { family = "Rec Mono CS754S", style = "Bold" }
+# italic = { family = "Rec Mono CS754S", style = "Bold Italic" }
+
+# normal = { family = "RecMonoLN2004 Nerd Font" }
+# normal = { family = "RecMonoLinear Nerd Font", style = "Bold" }
+# italic = { family = "RecMonoLinear Nerd Font", style = "Bold Italic" }
+
+# normal = { family = "ProFont IIx Nerd Font" }
+
+# normal = { family = "NotoSansM Nerd Font", style = "ExtraBold" }
+# italic = { family = "NotoSansM Nerd Font", style = "ExtraBold" }
+# bold = { family = "NotoSansM Nerd Font", style = "ExtraBold" }
+
+# normal = { family = "Mixcoatl Mono" }
+
+# normal = { family = "Operator Mono", style = "Bold" }
+
+# normal = { family = "DankMono Nerd Font", style = "Bold" }
+# size = 19.00 
+# offset = { x = -1, y = -2 }
+
+# normal = { family = "DankMono Nerd Font" } 
+
+# normal = { family = "Arnold_v0.3", style = "Regular" }
+# italic = { family = "Arnold_v0.3", style = "Italic" }
+
+# normal = { family = "Array Mono" }
+
+# normal = { family = "Bakemono Mono", style = "Medium" }
+
+
+# normal = { family = "ComicShannsMono Nerd Font" }
+# size = 18.00
+
+
+
+# normal = { family = "BerkeleyMono Nerd Font", style = "Bold" }
+# italic = { family = "BerkeleyMono Nerd Font", style = "Bold" }
+
+# normal = { family = "BerkeleyMono Nerd Font", style = "Regular" }
+# italic = { family = "BerkeleyMono Nerd Font", style = "Regular" }
+
+# normal = { family = "RecMonoLN700 Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoLN700 Nerd Font", style = "Italic" }
+
+# normal = { family = "RecMonoLN8404 Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoLN8404 Nerd Font", style = "Italic" }
+
+# normal = { family = "RecMonoLN840 Nerd Font", style = "Regular" }
+# normal = { family = "Rec Mono LN820", style = "Regular" }
+# italic = { family = "Rec Mono LN820", style = "Regular Italic" }
+
+# normal = { family = "ComicShannsMono Nerd Font", style = "Regular" }
+
+# normal = { family = "Comic Code", style = "Ligatures UltraLight" }
+# italic = { family = "Comic Code", style = "Ligatures UltraLight Italic" }
+
+# normal = { family = "Codelia Ligatures", style = "Regular" }
+# italic = { family = "Codelia Ligatures", style = "Italic" }
+
+# normal = { family = "Codelia Ligatures", style = "Medium" }
+# italic = { family = "Codelia Ligatures", style = "Medium Italic" }
+
+# normal = { family = "Codelia Ligatures", style = "ExtraBold" }
+# italic = { family = "Codelia Ligatures", style = "ExtraBold Italic" }
+
+# normal = { family = "CodeliaLigatures Nerd Font" }
+# normal = { family = "CodeliaLigatures Nerd Font", style = "Regular" }
+# italic = { family = "CodeliaLigatures Nerd Font", style = "Italic" }
+# size = 17.50
+# offset = { x = -2, y = -4 }
+# offset = { x = 0, y = -1 }
+# offset = { x = 0, y = -4 }
+
+# normal = { family = "CodeliaLigatures Nerd Font", style = "Black" }
+# italic = { family = "CodeliaLigatures Nerd Font", style = "Black Italic" }
+# bold = { family = "CodeliaLigatures Nerd Font", style = "Black" }
+
+# normal = { family = "CodeliaLigatures Nerd Font", style = "Medium" }
+# italic = { family = "CodeliaLigatures Nerd Font", style = "Medium Italic" }
+# bold = { family = "CodeliaLigatures Nerd Font", style = "Medium" }
+
+# normal = { family = "CodeliaLigatures Nerd Font", style = "Bold" }
+# italic = { family = "CodeliaLigatures Nerd Font", style = "Bold Italic" }
+# bold = { family = "CodeliaLigatures Nerd Font", style = "Bold" }
+
+# normal = { family = "ComicCodeLigatures Nerd Font", style = "Medium" }
+# italic = { family = "ComicCodeLigatures Nerd Font", style = "Medium Italic" }
+# bold = { family = "ComicCodeLigatures Nerd Font", style = "Medium" }
+
+# normal = { family = "ComicCodeLigatures Nerd Font", style = "Bold" }
+# italic = { family = "ComicCodeLigatures Nerd Font", style = "Bold Italic" }
+
+# normal = { family = "Motomangucode" }
+
+# normal = { family = "RecMonoWEZ520 Nerd Font" }
+# normal = { family = "OperatorMonoLig Nerd Font" }
+# size = 17.50
+
+# normal = { family = "ComicCodeLigatures Nerd Font", style = "SemiBold" }
+# italic = { family = "ComicCodeLigatures Nerd Font", style = "SemiBold Italic" }
+# bold = { family = "ComicCodeLigatures Nerd Font", style = "SemiBold" }
+
+# normal = { family = "Monoflow Nerd Font", style = "Medium" }
+# normal = { family = "Monoflow Nerd Font", style = "Bold" }
+# italic = { family = "Monoflow", style = "Bold Italic" }
+
+# normal = { family = "OperatorMonoLig Nerd Font", style = "Light" }
+# italic = { family = "OperatorMonoLig Nerd Font", style = "Light Italic" }
+# bold = { family = "OperatorMonoLig Nerd Font", style = "Light" }
+
+# Font size in points -- default value is = 11.25;
+# size = 16.00
+# size = 16.50
+# size = 17.00
+# size = 17.50
+# size = 18.00
+# size = 19.00
+# size = 19.50
+# size = 20.00
+# size = 20.50
+# size = 21.00
+# size = 21.50
+# size = 22.00
+
+# Offset is extra space around each character
+# offset = { x = -1, y = 0 } 
+# offset = { x = -3, y = 0 }
+# offset = { x = -1, y = -4 }
+# offset = { x = -2, y = -4 }
+# offset = { x = -2, y = 1 }
+# offset = { x = -1, y = -2 }
+
+# [colors.bright]
+# black = "0x32302f"
+# blue = "0x7daea3"
+# cyan = "0x89b482"
+# green = "0xa9b665"
+# magenta = "0xd3869b"
+# red = "0xea6962"
+# white = "0xd4be98"
+# yellow = "0xd8a657"
+#
+# [colors.normal]
+# black = "0x32302f"
+# blue = "0x7daea3"
+# cyan = "0x89b482"
+# green = "0xa9b665"
+# magenta = "0xd3869b"
+# red = "0xea6962"
+# white = "0xd4be98"
+# yellow = "0xd8a657"
+#
+# [colors.primary]
+# background = "0x1d2021"
+# foreground = "0xd4be98"

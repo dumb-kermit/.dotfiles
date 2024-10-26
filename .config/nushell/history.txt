@@ -1,0 +1,100 @@
+lf
+exit
+lf
+exit
+help path
+path add help
+path add /usr/bin
+path /usr/bin
+lf
+exit
+lf
+exit
+lf
+exit
+lf
+exi
+exit
+z dev
+ls
+zi nushell
+z config
+lf
+brew install orbstack
+config nu
+lf
+q
+exit
+clear
+z conf
+lf
+exit
+z dev
+r
+ls
+exit
+lf
+exit
+ls | explore -i
+z nushell
+lf
+exit
+z dev
+exit
+qq
+exit
+~
+exit
+q
+exit
+z dev
+exit
+hyperfine 'fd lua'
+hyperfine 'ag lua'
+q
+exit
+clear
+llf
+q
+qq
+exit
+lf
+$env.NU_LIB_DIRS
+exit
+z dev
+r
+cd shell
+cd zsh
+ls
+cd zsh-bench/
+ls-wide-with-color
+ls-wide2
+lf
+exit
+z dev
+r
+z nushell
+z dev
+z nushell
+cargo install nu_plugin_gstat
+lf
+plugin add /Users/hk_nep/.cargo/bin/nu_plugin_gstat
+plugin use gstat
+z dev
+z nushell
+exit
+z dev
+exit
+z dev
+r
+ls
+sleep 5
+sleep=5
+sleep 
+sleep 10
+sleep 3
+brew upgrade
+nvim
+z dev
+ls
+q

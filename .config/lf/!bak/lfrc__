@@ -1,0 +1,323 @@
+# set drawbox
+# set icons
+set period 1
+# set ratios "5:6:13"
+# set ratios "2:3:7"
+set ratios "4:10"
+# set ratios "2:3:8"
+set hidden!
+set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run.xml"
+set previewer ctpv
+set cleaner ctpvclear
+# set cleaner '~/.config/lf/cleaner'
+# set previewer '~/.config/lf/previewer'
+&ctpv -s $id
+&ctpvquit $id
+set incsearch true
+set incfilter true
+set globsearch on
+# set relativenumber
+# set number
+set dircounts
+set tabstop 4
+# set promptfmt " \033[33m\033[30;103m􁉃    LFRC 2.0 􁉉 \033[0m\033[33m\033[0m  \033[34m\033[30;104m  %u \033[0m\033[34m\033[0m      %S   \033[34;1m 󰟐  %w\033[0m\033[1m%f\033[0m" 
+# set promptfmt "\033[30;103m 󰟐  %d%f \033[0m\033[33m\033[0m                     %S  \033[34m\033[30;104m  %u \033[0m\033[34m\033[0m\033[36m\033[30;106m   LFRC 2.0 \033[0m\033[36m\033[0m" 
+# set promptfmt "\033[30;103m 󰟐  %d%f \033[0m\033[33m\033[0m                     %S  \033[30;104m  %u \033[0m\033[34m\033[0m\033[30;106m   LFRC 2.0 \033[0m\033[36m\033[0m" 
+# set promptfmt "\033[48;5;3m\033[38;5;0m   %d%f %S" 
+# set promptfmt ""
+# set cursorparentfmt "\033[2m"
+# set cursorparentfmt "\033[48;5;7m\033[38;5;0m"
+# set cursorparentfmt "\033[48;5;231m"
+set cursorparentfmt "\033[7;1m"
+set cursorpreviewfmt  ""
+set infotimefmtnew "02/15:04"
+set numberfmt " \033[38;5;59;3;5m"
+# set borderfmt "\033[38;5;7m"
+set borderfmt "\033[38;5;15;5m"
+set dirfirst true
+set info time
+set findlen 0
+set anchorfind false
+set mouse false
+set hidecursorinactive false 
+# set "size:time"
+set "time"
+set wrapscan true
+set wrapscroll true
+set dirpreviews true
+# interpreter for shell commands
+set shell "zsh"
+
+# set '-eu' options for shell commands
+# These options are used to have safer shell commands. Option '-e' is used to
+# exit on error and option '-u' is used to give error for unset variables.
+# Option '-f' disables pathname expansion which can be useful when $f, $fs, and
+# $fx variables contain names with '*' or '?' characters. However, this option
+# is used selectively within individual commands as it can be limiting at
+# times.
+set shellopts '-eu'
+
+# set internal field separator (IFS) to "\n" for shell commands
+# This is useful to automatically split file names in $fs and $fx properly
+# since default file separator used in these variables (i.e. 'filesep' option)
+# is newline. You need to consider the values of these options and create your
+# commands accordingly.
+set ifs "\n"
+
+# leave some space at the top and the bottom of the screen
+set scrolloff 20
+
+# Use the `dim` attribute instead of underline for the cursor in the preview pane
+# set cursoractivefmt "\033[30;47m"
+# set cursoractivefmt "\033[38;5;231m"
+# set cursoractivefmt "\033[38;5;4m➡"
+# set cursoractivefmt ""
+# set cursoractivefmt "\033[7;1m"
+# set cursoractivefmt "\033[7;1m"
+# set cursoractivefmt "\033[38;5;1m󰜴"
+# set cursoractivefmt "\033[38;5;4m "
+# set cursoractivefmt "\033[38;5;1m"
+# set cursoractivefmt "\033[38;5;1m=>"
+# set cursoractivefmt "\033[48;5;15m\033[38;5;232m"
+# set cursoractivefmt "\033[38;5;231m􀱋"
+# set cursoractivefmt "\033[38;5;231m "
+
+# set cursoractivefmt "􀙿 "
+
+# set number
+# use enter for shell commands
+map <enter> shell
+
+# show the result of execution of previous commands
+map ` !true
+
+# execute current file (must be executable)
+map x $$f
+map X !$f
+
+# dedicated keys for file opener actions
+map o &mimeopen $f
+map O $mimeopen --ask $f
+map <space> ql 
+
+cmd ql &{{
+    set -f
+        ql $f
+    }}
+
+# define a custom 'open' command
+# This command is called when current file is not a directory. You may want to
+# use either file extensions and/or mime types here. Below uses an editor for
+# text files and a file opener for the rest.
+cmd open &{{
+    case $(file --mime-type -Lb $f) in
+        text/*) lf -remote "send $id \$$EDITOR \$fx";;
+        *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+    esac
+}}
+
+# mkdir command. See wiki if you want it to select created dir
+map a :push %mkdir<space>
+
+# define a custom 'rename' command without prompt for overwrite
+# cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
+map / push :rename<space>
+
+# make sure trash folder exists
+%mkdir -p ~/.trash
+
+# move current file or selected files to trash folder
+# (also see 'man mv' for backup/overwrite options)
+cmd trash %set -f; mv $fx ~/.trash
+
+# define a custom 'delete' command
+# cmd delete ${{
+#     set -f
+#     printf "$fx\n"
+#     printf "delete?[y/n]"
+#     read ans
+#     [ "$ans" = "y" ] && rm -rf $fx
+# }}
+
+# use '<delete>' key for either 'trash' or 'delete' command
+map <delete> trash
+# map <delete> delete
+
+# extract the current file with the right command
+# (xkcd link: https://xkcd.com/1168/)
+# cmd extract ${{
+#    set -f
+#    case $f in
+#        *.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
+#        *.tar.gz|*.tgz) tar xzvf $f;;
+#        *.tar.xz|*.txz) tar xJvf $f;;
+#        *.zip) unzip $f;;
+#        *.rar) unrar x $f;;
+#        *.7z) 7z x $f;;
+#    esac
+# }}
+
+# compress current file or selected files with tar and gunzip
+cmd tar ${{
+    set -f
+    mkdir $1
+    cp -r $fx $1
+    tar czf $1.tar.gz $1
+    rm -rf $1
+}}
+
+# compress current file or selected files with zip
+cmd zip ${{
+    set -f
+    mkdir $1
+    cp -r $fx $1
+    zip -r $1.zip $1
+    rm -rf $1
+}}
+
+source '~/.config/lf/opener'
+
+cmd on-select &{{
+    # lf -remote "send $id set statfmt \"$(eza -ld --icons=always --color=always "$f")\""
+    # lf -remote "send $id set promptfmt \"$(eza -d --color=always "$f")\"" 
+}}
+
+cmd fzf_jump ${{
+    res="$(find . -maxdepth 1 | fzf --reverse --header='Jump to location')"
+    if [ -n "$res" ]; then
+        if [ -d "$res" ]; then
+            cmd="cd"
+        else
+            cmd="select"
+        fi
+        res="$(printf '%s' "$res" | sed 's/\\/\\\\/g;s/"/\\"/g')"
+        lf -remote "send $id $cmd \"$res\""
+    fi
+}}
+
+cmd fzf_search ${{
+    RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "
+    res="$(
+        FZF_DEFAULT_COMMAND="$RG_PREFIX ''" \
+            fzf --bind "change:reload:$RG_PREFIX {q} || true" \
+            --ansi --layout=reverse --header 'Search in files' \
+            | cut -d':' -f1 | sed 's/\\/\\\\/g;s/"/\\"/g'
+    )"
+    [ -n "$res" ] && lf -remote "send $id select \"$res\""
+}}
+
+cmd z %{{
+	result="$(zoxide query --exclude $PWD $@ | sed 's/\\/\\\\/g;s/"/\\"/g')"
+	lf -remote "send $id cd \"$result\""
+}}
+
+cmd zi ${{
+	result="$(zoxide query -i | sed 's/\\/\\\\/g;s/"/\\"/g')"
+	lf -remote "send $id cd \"$result\""
+}}
+
+cmd follow_link %{{
+  lf -remote "send ${id} select '$(readlink $f)'"
+}}
+
+cmd extract ${{
+    set -f
+    atool -x $f
+}}
+
+cmd complete-cmd :{{
+    # position cursor at the end of the first word
+    cmd-home
+    cmd-word
+
+    # perform tab completion before running the command
+    cmd-complete
+    cmd-enter
+}}
+
+cmd edit-config ${{
+    $EDITOR ~/.config/lf/lfrc
+    lf -remote "send $id source ~/.config/lf/lfrc"
+}}
+
+cmd paste &{{
+    set -- $(cat ~/.local/share/lf/files)
+    mode="$1"
+    shift
+    case "$mode" in
+        copy)
+            rsync -av --ignore-existing --progress -- "$@" . |
+            stdbuf -i0 -o0 -e0 tr '\r' '\n' |
+            while IFS= read -r line; do
+                lf -remote "send $id echo $line"
+            done
+            ;;
+        move) mv -n -- "$@" .;;
+    esac
+    rm ~/.local/share/lf/files
+    lf -remote "send clear"
+}}
+
+cmd newfold ${{
+    set -f
+    printf "Directory name: "
+    read newd
+    mkdir -- "$newd"
+    mv -- $fx "$newd"
+}}
+
+# set pane_path when changing directory
+cmd on-cd &{{
+    printf "\e]7;$PWD\e\\" > /dev/tty
+    zoxide add "$PWD"
+}}
+
+# unset pane_path when quitting
+cmd on-quit &{{
+    printf "\e]7;\e\\" > /dev/tty
+}}
+
+# trigger on-cd upon startup
+on-cd
+
+map C edit-config
+map L follow_link
+map G :fzf_search
+map F :fzf_jump
+map w up
+map s down
+map d open
+map a updir
+map <tab> toggle
+map c copy
+map v :paste; clear
+map x cut
+map = set ratios '2:3:3:12'
+map - set ratios '4:7'
+map 0 set ratios '5:6:13'
+map z push :z<space>
+# map f search *
+map <enter> shell
+map W push 8w
+map S push 8s
+map g :fzf_search
+map E :extract
+map N newfold
+map <a-h> ${{
+    clear
+    cmd=$(
+    lf -remote "query $id history" |
+     awk -F'\t' 'NR > 1 { print $NF}' |
+     sort -u |
+     fzf --reverse --prompt='Execute command: '
+     )
+     lf -remote "send $id $cmd"
+}}}}
+
+map D trash
+map f filter
+
+map c :{{
+    set sortby time
+    set info time
+}}

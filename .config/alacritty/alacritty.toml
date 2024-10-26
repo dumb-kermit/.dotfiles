@@ -1,0 +1,380 @@
+# ALACRITTY CFG #
+
+# [shell]
+shell = { program = "/opt/homebrew/bin/fish" }
+# program = "/opt/homebrew/bin/fish"  # Example for Linux/BSD/macOS
+# args = [ "-l -i" ]
+
+# import = ["~/.config/alacritty/catppuccin-latte.toml"]
+# import = ["~/.config/alacritty/gruvbox_og.toml"]
+# import = ["~/.config/alacritty/alacritty-theme/themes/gruvbox_dark.toml"]
+import = ["~/.config/alacritty/tokyonight_day.toml"]
+# import = ["~/.config/alacritty/srcery_alacritty.toml"]
+# import = ["~/.config/alacritty/schemes/Monokai Soda.toml"]
+# import = ['~/.config/alacritty/alacritty-theme/themes/solarized_dark.toml']
+# import = ["/Users/hk_nep/.config/alacritty/alacritty-theme/themes/monokai_charcoal.toml"]
+# import = ["~/.config/alacritty/alacritty-theme/themes/monokai.toml"]
+# import = ["~/.config/alacritty/miasma.toml"]
+# import = ['~/.config/alacritty/bamboo.toml']
+# import = ['~/.config/alacritty/schemes/Dracula+.toml']
+# import = ["~/.config/alacritty/tokyonight_storm.toml"]
+
+working_directory = "None" # Default: "None"
+live_config_reload = true  # Default: true
+ipc_socket = true          # Default: true
+
+[env]
+# TERM = "xterm-256color"
+# TERM = "alacritty-direct"
+TERM = "alacritty"
+COLORTERM = "truecolor"
+
+[window]
+# Window dimensions
+dimensions = { columns = 0, lines = 0 } # Default: columns = 0, lines = 0
+
+# Window startup position
+position = "None" # Default: "None"
+
+# Padding
+# padding = { x = 0, y = 14 } # Default: x = 0, y = 25
+
+# Dynamic padding
+dynamic_padding = true # Default: false
+# decorations = "Transparent" # Default: "Full"
+# opacity = 0.64 # Default: 1.0
+
+# Blur (macOS/KDE Wayland only)
+blur = true # Default: false
+
+# Startup mode
+startup_mode = "Windowed"          # Default: "Windowed"
+title = "Alacritty"                # Default: "Alacritty"
+dynamic_title = true               # Default: true
+# decorations_theme_variant = "Dark" # Default: "None"
+resize_increments = false          # Default: false
+
+# Window class (Linux/BSD only)
+class = { instance = "Alacritty", general = "Alacritty" } # Default: instance = "Alacritty", general = "Alacritty"
+
+# Option as Alt (monly)
+option_as_alt = "Both" # Default: "None"
+
+[scrolling]
+# Maximum number of lines in the scrollback buffer
+history = 10000 # Default: 10000
+
+# Number of lines scrolled for every input scroll increment
+multiplier = 3 # Default: 3
+
+[font]
+# normal = { family = "PragmataPro Mono Liga X", style = "Regular" }
+# italic = { family = "PragmataPro Mono Liga X", style = "Italic" }
+
+# normal = { family = "PragmataPro Mono Liga", style = "Bold" }
+
+# normal = { family = "PragmataProMonoLigaE Nerd Font", style = "Bold" }
+# italic = { family = "PragmataProMonoLigaE Nerd Font", style = "Bold Italic" }
+
+# normal = { family = "PragmataPro Mono Liga kt", style = "Bold" }
+# italic = { family = "PragmataPro Mono Liga kt", style = "Bold Italic" }
+# size = 20.00
+# offset = { x = 1, y = -3 }
+# glyph_offset = { x = 0, y = 1 }
+
+normal = { family = "BlexMono Nerd Font Propo", style = "Light" }
+italic = { family = "BlexMono Nerd Font Propo", style = "Light Italic" }
+bold = { family = "BlexMono Nerd Font Propo", style = "Light" }
+bold_italic = { family = "BlexMono Nerd Font Propo", style = "Light Italic" }
+
+# normal = { family = "BlexMono Nerd Font Propo", style = "Regular" }
+# italic = { family = "BlexMono Nerd Font Propo", style = "Italic" }
+# bold = { family = "BlexMono Nerd Font Propo", style = "Regular" }
+# bold_italic = { family = "BlexMono Nerd Font Propo", style = "Italic" }
+
+# normal = { family = "BlexMono Nerd Font Propo", style = "Medium" }
+# italic = { family = "BlexMono Nerd Font Propo", style = "Medium Italic" }
+# bold = { family = "BlexMono Nerd Font Propo", style = "Medium" }
+# bold_italic = { family = "BlexMono Nerd Font Propo", style = "Medium Italic" }
+
+# normal = { family = "BlexMono Nerd Font Propo", style = "Bold" }
+# italic = { family = "BlexMono Nerd Font Propo", style = "Bold Italic" }
+# bold = { family = "BlexMono Nerd Font Propo", style = "Bold" }
+# bold_italic = { family = "BlexMono Nerd Font Propo", style = "Bold Italic" }
+size = 20.50
+offset = { x = -1, y = -6 }
+glyph_offset = { x = 0, y = -1 }
+
+# normal = { family = "MD IO Trial", style = "Thin" }
+# italic = { family = "MD IO Trial", style = "Thin Italic" }
+# bold = { family = "MD IO Trial", style = "Thin" }
+# bold_italic = { family = "MD IO Trial", style = "Thin Italic" }
+
+# normal = { family = "MD IO Trial", style = "Semibold" }
+# italic = { family = "MD IO Trial", style = "Semibold Italic" }
+# bold = { family = "MD IO Trial", style = "Semibold" }
+# bold_italic = { family = "MD IO Trial", style = "Semibold Italic" }
+
+# normal = { family = "XMDIOTrial Nerd Font", style = "Bold" }
+# italic = { family = "XMDIOTrial Nerd Font", style = "Bold Italic" }
+# bold = { family = "XMDIOTrial Nerd Font", style = "Bold" }
+# bold_italic = { family = "XMDIOTrial Nerd Font", style = "Bold Italic" }
+# size = 20.00
+# offset = { x = 0, y = -3}
+# glyph_offset = { x = 0, y = -1 }
+
+# normal = { family = "Chivo Mono", style = "Medium" }
+# bold = { family = "Chivo Mono", style = "Medium" }
+# italic = { family = "Chivo Mono", style = "Medium" }
+# size = 19.00
+# offset = { x = 0, y = -7 }
+# glyph_offset = { x = 0, y = -2 }
+
+# normal = { family = "TTAutonomousMono Nerd Font", style = "Bold" }
+# bold = { family = "TTAutonomousMono Nerd Font", style = "Bold" }
+# italic = { family = "TTAutonomousMono Nerd Font", style = "Bold Italic" }
+
+# normal = { family = "TT Autonomous Mono", style = "Medium" }
+# bold = { family = "TT Autonomous Mono", style = "Medium" }
+# italic = { family = "TT Autonomous Mono", style = "Medium Italic" }
+
+# normal = { family = "TT Autonomous Mono", style = "Regular" }
+# bold = { family = "TT Autonomous Mono", style = "Regular" }
+# italic = { family = "TT Autonomous Mono", style = "Italic" }
+# size = 19.00
+# offset = { x = -2, y = -13 }
+# glyph_offset = { x = 0, y = -3 }
+
+# normal = { family = "JetBrains Mono x", style = "ExtraBold" }
+# bold = { family = "JetBrains Mono x", style = "ExtraBold" }
+# italic = { family = "JetBrains Mono x", style = "ExtraBold Italic" }
+# bold_italic = { family = "JetBrains Mono x", style = "ExtraBold Italic" }
+# size = 18.00
+# offset = { x = 0, y = -10 }
+# glyph_offset = { x = 0, y = -4 }
+
+# normal = { family = "Calling Code", style = "Bold" }
+# bold = { family = "Calling Code", style = "Bold" }
+# italic = { family = "Calling Code", style = "Bold Italic" }
+# bold_italic = { family = "Calling Code", style = "Bold Italic" }
+
+# normal = { family = "Senpai Coder", style = "Bold" }
+# bold = { family = "Senpai Coder", style = "Bold" }
+# italic = { family = "Senpai Coder", style = "Bold Italic" }
+# bold_italic = { family = "Senpai Coder", style = "Bold Italic" }
+# size = 21.00
+# offset = { x = 0, y = -10 }
+# glyph_offset = { x = 0, y = -4 }
+
+# normal = { family = "Codelia Ligatures", style = "Bold" }
+# bold = { family = "Codelia Ligatures", style = "Bold" }
+# italic = { family = "Codelia Ligatures", style = "Bold Italic" }
+# bold_italic = { family = "Codelia Ligatures", style = "Bold Italic" }
+
+# normal = { family = "Codelia Ligatures", style = "Black" }
+# bold = { family = "Codelia Ligatures", style = "Black" }
+# italic = { family = "Codelia Ligatures", style = "Black Italic" }
+# bold_italic = { family = "Codelia Ligatures", style = "Black Italic" }
+
+# normal = { family = "Codelia Ligatures", style = "Regular" }
+# bold = { family = "Codelia Ligatures", style = "Regular" }
+# italic = { family = "Codelia Ligatures", style = "Italic" }
+# bold_italic = { family = "Codelia Ligatures", style = "Italic" }
+
+# normal = { family = "Codelia Ligatures", style = "Light" }
+# bold = { family = "Codelia Ligatures", style = "Light" }
+# italic = { family = "Codelia Ligatures", style = "Light Italic" }
+# bold_italic = { family = "Codelia Ligatures", style = "Light Italic" }
+# size = 19.00
+# offset = { x = -1, y = -7 }
+# glyph_offset = { x = 0, y = -2 }
+
+# normal = { family = "Dossier", style = "Regular" }
+# bold = { family = "Dossier", style = "Regular" }
+# italic = { family = "Dossier", style = "Regular Italic" }
+# bold_italic = { family = "Dossier", style = "Regular Italic" }
+#
+# normal = { family = "Dossier", style = "Semibold" }
+# bold = { family = "Dossier", style = "Semibold" }
+# italic = { family = "Dossier", style = "Semibold Italic" }
+# bold_italic = { family = "Dossier", style = "Semibold Italic" }
+
+# normal = { family = "Dossier", style = "Bold" }
+# bold = { family = "Dossier", style = "Bold" }
+# italic = { family = "Dossier", style = "Bold Italic" }
+# bold_italic = { family = "Dossier", style = "Bold Italic" }
+
+# normal = { family = "Dossier", style = "Light" }
+# bold = { family = "Dossier", style = "Light" }
+# italic = { family = "Dossier", style = "Light Italic" }
+# bold_italic = { family = "Dossier", style = "Light Italic" }
+# size = 16.00
+
+# normal = { family = "VCTR Mono Trial v0.12", style = "Bold" }
+# italic = { family = "VCTR Mono Trial v0.12", style = "Bold Italic" }
+# bold = { family = "VCTR Mono Trial v0.12", style = "Bold" }
+# bold_italic = { family = "VCTR Mono Trial v0.12", style = "Bold Italic" }
+
+# normal = { family = "VCTR Mono Trial v0.12", style = "Light" }
+# italic = { family = "VCTR Mono Trial v0.12", style = "Light Italic" }
+# bold = { family = "VCTR Mono Trial v0.12", style = "Light" }
+# bold_italic = { family = "VCTR Mono Trial v0.12", style = "Light Italic" }
+# size = 21.5
+# offset = { x = -1, y = -6 }
+# glyph_offset = { x = 0, y = 1 }
+
+# normal = { family = "BerkeleyMono Nerd Font", style = "Bold" }
+# italic = { family = "BerkeleyMono Nerd Font", style = "Bold Italic" }
+# size = 20.50
+# offset = { x = -1, y = -4 } 
+# glyph_offset = { x = 0, y = 0 } 
+
+# normal = { family = "RecMonoF400 Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoF400 Nerd Font", style = "Italic" }
+
+# normal = { family = "RecMonoCC310 Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoCC310 Nerd Font", style = "Italic" }
+
+# normal = { family = "Rec Mono C700", style = "Regular" }
+# italic = { family = "Rec Mono C700", style = "Italic" }
+
+# normal = { family = "Rec Mono V17734", style = "Italic" }
+# italic = { family = "Rec Mono V17734", style = "Italic" }
+
+# normal = { family = "RecMonoV15680 Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoV15680 Nerd Font", style = "Italic" }
+
+# normal = { family = "RecMonoV15580 Nerd Font", style = "Regular" }
+# italic = { family = "RecMonoV15580 Nerd Font", style = "Italic" }
+
+# normal = { family = "Rec Mono V13_740", style = "Regular" }
+# italic = { family = "Rec Mono V13_740", style = "Italic" }
+
+# normal = { family = "Rec Mono V15_380", style = "Regular" }
+# italic = { family = "Rec Mono V15_380", style = "Italic" }
+
+# normal = { family = "Rec Mono F420", style = "Regular" }
+# italic = { family = "Rec Mono F420", style = "Italic" }
+
+# normal = { family = "Rec Mono F500", style = "Regular" }
+# italic = { family = "Rec Mono F500", style = "Italic" }
+
+# normal = { family = "Rec Mono a4640", style = "Regular" }
+# italic = { family = "Rec Mono a4640", style = "Italic" }
+
+# normal = { family = "Rec Mono a4310", style = "Regular" }
+# italic = { family = "Rec Mono a4310", style = "Italic" }
+
+# normal = { family = "Rec Mono a1534", style = "Italic" }
+# italic = { family = "Rec Mono a1534", style = "Italic" }
+
+# normal = { family = "Rec Mono a3318", style = "Regular" }
+# italic = { family = "Rec Mono a3318", style = "Italic" }
+
+# normal = { family = "Rec Mono V18334", style = "Italic" }
+# italic = { family = "Rec Mono V18334", style = "Italic" }
+
+# normal = { family = "ATNameMonoVariableG Nerd Font", style = "ExtraBold Regular" }
+# italic = { family = "ATNameMonoVariableG Nerd Font", style = "ExtraBold Italic Italic" }
+# size = 18.50
+# offset = { x = -1, y = -2 } 
+# glyph_offset = { x = 0, y = 2 } 
+
+# Glyph offset determines the locations of the glyphs within their cells
+# glyph_offset = { x = 0, y = -6 } # Default: x = 0, y = 0
+
+# Use built-in font for box drawing characters
+builtin_box_drawing = true # Default: true
+
+[colors.line_indicator]
+foreground = "#000000"
+
+[bell]
+# Visual bell animation effect
+animation = "Linear" # Default: "Linear"
+
+# Duration of the visual bell flash in milliseconds
+duration = 150 # Default: 0
+
+# Visual bell animation color
+color = "#9a7ad8" # Default: "#ffffff"
+
+# Command executed when the bell is rung
+command = "None" # Default: "None"
+
+[selection]
+# Characters that are used as separators for "semantic words" in Alacritty
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\\t" # Default: ",│`|:\"' ()[]{}<>\\t"
+
+# When set to true, selected text will be copied to the primary clipboard
+save_to_clipboard = true # Default: false
+
+[cursor]
+style = { shape = "Beam", blinking = "On" } # Default: shape = "Block", blinking = "Off"
+
+# Vi mode cursor style (falls back to the active value of the normal cursor if "None")
+vi_mode_style = "None" # Default: "None"
+
+# Cursor blinking interval in milliseconds
+blink_interval = 150 # Default: 750
+
+# Time after which cursor stops blinking, in seconds
+blink_timeout = 0 # Default: 5
+
+# When true, the cursor will be rendered as a hollow box when the window is not focused
+unfocused_hollow = false # Default: true
+
+# Thickness of the cursor relative to the cell width
+thickness = 0.75 # Default: 0.15
+
+[terminal]
+# Controls the OSC 52 behavior for clipboard interactions
+osc52 = "CopyPaste" # Default: "OnlyCopy"
+
+[mouse]
+hide_when_typing = true # Default: false
+
+# Mouse bindings (actual bindings need to be defined as per user preference)
+# Example: bindings = [{ mouse = "Left", action = "Paste" }]
+bindings = []
+
+[hints]
+# Define the keys used for hint labels
+alphabet = "jfkdls;ahgurieowpq" # Default: "jfkdls;ahgurieowpq"
+
+[[hints.enabled]]
+command = "open"                                                                                                                                          # On macOS
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+binding = { key = "Space", mods = "Control|Shift" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+
+[keyboard]
+bindings = [
+    { key = "Space", mods = "Control", chars = "clear\n" },
+    { key = "n", mods = "Super", action = "CreateNewTab" },
+    { key = "f", mods = "Super", action = "SearchForward" },
+    { key = "F", mods = "Super", action = "SearchBackward" },
+    { key = "B", mods = "Super|Control|Option|Alt", action = "Quit" },
+    { key = "Space", mods = "Shift", action = "ToggleViMode" },
+    { key = "d", mods = "Super", chars = "lfcd\n" },
+    { key = "a", mods = "Super", chars = "y\n" },
+    { key = "s", mods = "Super", chars = "nvim\n" },
+    { key = "w", mode = "Vi", action = "Up" },
+    { key = "s", mode = "Vi", action = "Down" },
+    { key = "d", mode = "Vi", action = "Right" },
+    { key = "a", mode = "Vi", action = "Left" },
+    { key = "a", mods = "Shift", mode = "Vi", action = "WordLeft" },
+    { key = "d", mods = "Shift", mode = "Vi", action = "WordRight" },
+    { key = "w", mods = "Shift", mode = "Vi", action = "ScrollHalfPageUp" },
+    { key = "s", mods = "Shift", mode = "Vi", action = "ScrollHalfPageDown" },
+    { key = "Space", mods = "Control", mode = "Vi", action = "ToggleSemanticSelection" },
+    # { key = "Key", mods = "Modifiers", chars = "Characters to send" },
+    # ...
+]
+
+[colors]
+draw_bold_text_with_bright_colors = true # Default
+# transparent_background_colors = true # Default

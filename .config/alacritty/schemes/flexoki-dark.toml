@@ -1,0 +1,47 @@
+# Colors (flexoki-dark)
+
+[colors.bright]
+black = '#575653'
+# blue = '#4385be'
+blue = "#3a79b5"
+green = "#7c8f32"
+cyan = "#339f95"
+red = "#d56527"
+magenta = "#8073c1"
+yellow = "#b18614"
+# cyan = '#3aa99f'
+# green = '#879a39'
+# magenta = '#ce5d97'
+# red = '#d14d41'
+white = '#cecdc3'
+# yellow = '#d0a215'
+
+[colors.cursor]
+cursor = '#cecdc3'
+text = '#1c1b1a'
+
+[colors.normal]
+black = '#1c1b1a'
+# blue = '#4385be'
+blue = "#3a79b5"
+green = "#7c8f32"
+cyan = "#339f95"
+red = "#d56527"
+magenta = "#8073c1"
+yellow = "#b18614"
+# cyan = '#3aa99f'
+# green = '#879a39'
+# magenta = '#ce5d97'
+# red = '#d14d41'
+white = '#b7b5ac'
+# yellow = '#d0a215'
+
+[colors.primary]
+# background = '#1c1b1a'
+background = '#100F0F'
+# background = '#201D1C'
+foreground = '#cecdc3'
+
+[colors.selection]
+background = '#cecdc3'
+text = '#4385be'
