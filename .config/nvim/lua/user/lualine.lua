@@ -10,8 +10,8 @@ function M.config()
 	-- require("lualine").setup()
 	-- require("user.myline.bubbles")
 	-- require("user.myline.thin")
-	-- require("user.myline.evil_lualine")
-	require("user.myline.statusline")
+	require("user.myline.evil_lualine")
+	-- require("user.myline.statusline")
 	-- require("lualine").setup({
 	-- options = {
 	-- theme = "auto",

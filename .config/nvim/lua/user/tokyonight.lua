@@ -26,7 +26,7 @@ function M.config()
 			sidebars = "transparent", -- style for sidebars, see below
 			floats = "transparent", -- style for floating windows
 		},
-		day_brightness = 0.15, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+		day_brightness = 0.25, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
 		dim_inactive = false, -- dims inactive windows
 		lualine_bold = false, -- When `true`, section headers in the lualine theme will be bold
 
@@ -35,7 +35,7 @@ function M.config()
 		--@param colors ColorScheme
 		on_colors = function(colors)
 			-- colors.bg = "#D5D6DB"
-			-- colors.bg = "#CDD3E1"
+			colors.bg = "#CDD3E1"
 			-- colors.bg = "#D5D6DB"
 			-- colors.bg = "#D1D5E3"
 			-- colors.fg = "#1A1A1A"

@@ -7,7 +7,7 @@ function M.config()
 	require("bamboo").setup({
 		-- Main options --
 		-- NOTE: to use the light theme, set `vim.o.background = 'light'`
-		style = "light", -- Choose between 'vulgaris' (regular), 'multiplex' (greener), and 'light'
+		style = "vulgaris", -- Choose between 'vulgaris' (regular), 'multiplex' (greener), and 'light'
 		toggle_style_key = nil, -- Keybind to toggle theme style. Leave it nil to disable it, or set it to a string, e.g. "<leader>ts"
 		toggle_style_list = { "vulgaris", "multiplex", "light" }, -- List of styles to toggle between
 		transparent = false, -- Show/hide background
@@ -46,7 +46,7 @@ function M.config()
 			background = true, -- use background color for virtual text
 		},
 	})
-	vim.o.background = "light"
+	vim.o.background = "dark"
 	require("bamboo").load()
 end
 

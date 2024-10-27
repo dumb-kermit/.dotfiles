@@ -141,31 +141,31 @@ config.window_padding = {
 -- config.cell_width = 0.95
 -- config.line_height = 0.84
 
--- config.font = wezterm.font_with_fallback({
--- 	{
--- 		family = "AT Name Mono Variable",
--- 		weight = "Medium",
--- 		harfbuzz_features = {
--- 			"calt=1",
--- 			"liga=1",
--- 			"kern=1",
--- 			"ccmp=1",
--- 			"mark=1",
--- 			"mkmk=1",
--- 			"ss13=1",
--- 			"ss14=1",
--- 			"ss16=1",
--- 			"ss05=0",
--- 			"zero=1",
--- 			"case=1",
--- 			"dlig=1",
--- 		},
--- 	},
--- 	"SF Mono",
--- })
--- config.font_size = 20.00
--- config.cell_width = 0.92
--- config.line_height = 0.94
+config.font = wezterm.font_with_fallback({
+	{
+		family = "AT Name Mono Variable",
+		weight = "Regular",
+		harfbuzz_features = {
+			"calt=1",
+			"liga=1",
+			"kern=1",
+			"ccmp=1",
+			"mark=1",
+			"mkmk=1",
+			"ss13=1",
+			"ss14=1",
+			"ss16=1",
+			"ss05=0",
+			"zero=1",
+			"case=1",
+			"dlig=1",
+		},
+	},
+	"SF Mono",
+})
+config.font_size = 20.00
+config.cell_width = 0.92
+config.line_height = 0.94
 
 -- config.font = wezterm.font_with_fallback({
 -- 	{
@@ -373,10 +373,10 @@ config.window_padding = {
 -- config.cell_width = 0.98
 -- config.line_height = 0.90
 
-config.font = wezterm.font_with_fallback({ { family = "XIBMPlexMono Nerd Font Mono", weight = "Bold" }, "SF Mono" })
-config.font_size = 19.00
-config.cell_width = 0.94
-config.line_height = 0.94
+-- config.font = wezterm.font_with_fallback({ { family = "XIBMPlexMono Nerd Font Mono", weight = "Bold" }, "SF Mono" })
+-- config.font_size = 19.00
+-- config.cell_width = 0.94
+-- config.line_height = 0.94
 
 -- config.font = wezterm.font_with_fallback({{ family = 'MonoLisa', weight = "Black", harfbuzz_features = { 'ss03=1', 'calt=1', 'liga=1', 'kern=1', 'ccmp=1', 'mark=1', 'mkmk=1', 'ss06=1', 'ss05=1', 'ss07=1', 'ss10=1', 'ss08=1', 'ss02=1', 'ss15=1', 'ss17=1', 'ss13=1', 'ss11=1', 'ss01=1', 'ss04=1', 'ss14=1', 'zero=1', 'case=1', 'dlig=1' } }, 'SF Mono'})
 -- config.font_size = 18.50
@@ -401,8 +401,8 @@ config.freetype_render_target = "Normal"
 -- config.color_scheme = "Frontend Delight (Gogh)"
 -- config.color_scheme = "Sonokai (Gogh)"
 -- config.color_scheme = "Gruvbox Material (Gogh)"
-config.color_scheme = "tokyonight_day"
--- config.color_scheme = "Gruvbox Dark (Gogh)"
+-- config.color_scheme = "tokyonight_day"
+config.color_scheme = "Gruvbox Dark (Gogh)"
 -- config.color_scheme = "Hardcore (Gogh)"
 -- config.color_scheme = "Gruber (base16)"
 -- config.color_scheme = "Solarized (dark) (terminal.sexy)"

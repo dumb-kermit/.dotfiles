@@ -5,7 +5,7 @@ local M = {
 
 function M.config()
 	require("newpaper").setup({
-		style = "light",
+		style = "dark",
 	})
 end
 return M

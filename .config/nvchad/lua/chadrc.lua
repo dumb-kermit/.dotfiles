@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "flexoki",
+	theme = "solarized8",
     -- transparency = true,
 
 	hl_override = {
@@ -65,7 +65,7 @@ M.ui = {
     telescope = { style = "borderless" }, -- borderless / bordered
 
     statusline = {
-      theme = "vscode", -- default/vscode/vscode_colored/minimal
+      theme = "minimal", -- default/vscode/vscode_colored/minimal
       -- default/round/block/arrow separators work only for default statusline theme
       -- round and block will work for minimal theme only
       separator_style = "round",

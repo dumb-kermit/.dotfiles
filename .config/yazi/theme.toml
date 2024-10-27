@@ -18,10 +18,10 @@ cwd = { fg = "cyan" }
 
 # Hovered
 hovered         = { reversed = true }
-preview_hovered = { underline = true }
+preview_hovered = { italic = true }
 
 # Find
-find_keyword  = { fg = "yellow", italic = true, underline = true }
+find_keyword  = { fg = "yellow", italic = true }
 find_position = { fg = "magenta", bg = "reset", italic = true }
 
 # Marker
@@ -42,8 +42,8 @@ count_selected = { fg = "white", bg = "yellow" }
 
 # Border
 # border_symbol = "│"
-border_symbol=  " "
-border_style  = { fg = "gray" }
+border_symbol= "┃"
+border_style  = { fg = "lightred" }
 
 # Highlighting
 syntect_theme = "~/.config/bat/themes/ansi2.tmTheme"
@@ -136,7 +136,7 @@ icon_command = ""
 [tasks]
 border  = { fg = "blue" }
 title   = {}
-hovered = { fg = "magenta", underline = true }
+hovered = { fg = "magenta", italic = true }
 
 # : }}}
 
@@ -224,28 +224,28 @@ rules = [
     { name = "*", is = "orphan", fg = "darkgray", bg = "red", italic = true },
     { name = "*", is = "sock", fg = "red" },
     { name = "*", is = "sticky", fg = "cyan", bg = "gray" },
-    { name = "*LS_COLORS", fg = "red", bg = "#87005f", italic = true, underline = true },
+    { name = "*LS_COLORS", fg = "red", bg = "#87005f", italic = true },
     { name = "*.txt", fg = "white" },
-    { name = "*README", fg = "yellow", underline = true },
-    { name = "*README.rst", fg = "yellow", underline = true },
-    { name = "*README.md", fg = "yellow", underline = true },
-    { name = "*LICENSE", fg = "yellow", underline = true },
-    { name = "*LICENSE.md", fg = "yellow", underline = true },
-    { name = "*COPYING", fg = "yellow", underline = true },
-    { name = "*INSTALL", fg = "yellow", underline = true },
-    { name = "*COPYRIGHT", fg = "yellow", underline = true },
-    { name = "*AUTHORS", fg = "yellow", underline = true },
-    { name = "*HISTORY", fg = "yellow", underline = true },
-    { name = "*CONTRIBUTORS", fg = "yellow", underline = true },
-    { name = "*CONTRIBUTING", fg = "yellow", underline = true },
-    { name = "*CONTRIBUTING.md", fg = "yellow", underline = true },
-    { name = "*CHANGELOG", fg = "yellow", underline = true },
-    { name = "*CHANGELOG.md", fg = "yellow", underline = true },
-    { name = "*CODEOWNERS", fg = "yellow", underline = true },
-    { name = "*PATENTS", fg = "yellow", underline = true },
-    { name = "*VERSION", fg = "yellow", underline = true },
-    { name = "*NOTICE", fg = "yellow", underline = true },
-    { name = "*CHANGES", fg = "yellow", underline = true },
+    { name = "*README", fg = "yellow", italic = true },
+    { name = "*README.rst", fg = "yellow", italic = true },
+    { name = "*README.md", fg = "yellow", italic = true },
+    { name = "*LICENSE", fg = "yellow", italic = true },
+    { name = "*LICENSE.md", fg = "yellow", italic = true },
+    { name = "*COPYING", fg = "yellow", italic = true },
+    { name = "*INSTALL", fg = "yellow", italic = true },
+    { name = "*COPYRIGHT", fg = "yellow", italic = true },
+    { name = "*AUTHORS", fg = "yellow", italic = true },
+    { name = "*HISTORY", fg = "yellow", italic = true },
+    { name = "*CONTRIBUTORS", fg = "yellow", italic = true },
+    { name = "*CONTRIBUTING", fg = "yellow", italic = true },
+    { name = "*CONTRIBUTING.md", fg = "yellow", italic = true },
+    { name = "*CHANGELOG", fg = "yellow", italic = true },
+    { name = "*CHANGELOG.md", fg = "yellow", italic = true },
+    { name = "*CODEOWNERS", fg = "yellow", italic = true },
+    { name = "*PATENTS", fg = "yellow", italic = true },
+    { name = "*VERSION", fg = "yellow", italic = true },
+    { name = "*NOTICE", fg = "yellow", italic = true },
+    { name = "*CHANGES", fg = "yellow", italic = true },
     { name = "*.log", fg = "green" },
     { name = "*.adoc", fg = "yellow" },
     { name = "*.asciidoc", fg = "yellow" },
@@ -307,7 +307,7 @@ rules = [
     { name = "*.PDF", fg = "#af87ff" },
     { name = "*.mobi", fg = "#af87ff" },
     { name = "*.epub", fg = "#af87ff" },
-    { name = "*.docm", fg = "#87afff", underline = true },
+    { name = "*.docm", fg = "#87afff", italic = true },
     { name = "*.doc", fg = "#87afff" },
     { name = "*.docx", fg = "#87afff" },
     { name = "*.odb", fg = "#87afff" },
@@ -319,8 +319,8 @@ rules = [
     { name = "*.ppt", fg = "#d75f00" },
     { name = "*.pptx", fg = "#d75f00" },
     { name = "*.ppts", fg = "#d75f00" },
-    { name = "*.pptxm", fg = "#d75f00", underline = true },
-    { name = "*.pptsm", fg = "#d75f00", underline = true },
+    { name = "*.pptxm", fg = "#d75f00", italic = true },
+    { name = "*.pptsm", fg = "#d75f00", italic = true },
     { name = "*.prisma", fg = "#ffd787" },
     { name = "*.csv", fg = "#5fd787" },
     { name = "*.tsv", fg = "#5fd787" },
@@ -329,8 +329,8 @@ rules = [
     { name = "*.xla", fg = "#5fd700" },
     { name = "*.xls", fg = "#87d700" },
     { name = "*.xlsx", fg = "#87d700" },
-    { name = "*.xlsxm", fg = "#87d700", underline = true },
-    { name = "*.xltm", fg = "#5fafaf", underline = true },
+    { name = "*.xlsxm", fg = "#87d700", italic = true },
+    { name = "*.xltm", fg = "#5fafaf", italic = true },
     { name = "*.xltx", fg = "#5fafaf" },
     { name = "*.key", fg = "#d75f00" },
     { name = "*config", italic = true },

@@ -6,7 +6,7 @@ local M = {
 
 function M.config()
 	require("catppuccin").setup({
-		flavour = "latte", -- latte, frappe, macchiato, mocha
+		flavour = "frappe", -- latte, frappe, macchiato, mocha
 		background = { -- :h background
 			light = "latte",
 			dark = "mocha",
@@ -30,7 +30,7 @@ function M.config()
 			keywords = { "italic" },
 			strings = { "italic" },
 			variables = {},
-			numbers = {},
+			numbers = { "underline" },
 			booleans = {},
 			properties = { "italic" },
 			types = { "italic" },
@@ -75,7 +75,7 @@ function M.config()
 		custom_highlights = {
 			-- latte = function(latte)
 			-- 	return {
-			StatusLine = { bg = "#E1E2EA" },
+			-- StatusLine = { bg = "#E1E2EA" },
 			-- }
 			-- 	end,
 		},

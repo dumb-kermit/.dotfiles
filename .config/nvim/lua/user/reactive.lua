@@ -5,7 +5,7 @@ local M = {
 
 function M.config()
 	require("reactive").setup({
-		load = { "catppuccin-latte-cursor", "catppuccin-latte-cursorline" },
+		load = { "catppuccin-frappe-cursor", "catppuccin-frappe-cursorline" },
 	})
 	-- require("reactive").setup({
 	-- 	builtin = {

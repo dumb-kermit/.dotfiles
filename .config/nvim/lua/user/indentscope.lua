@@ -11,7 +11,9 @@ function M.config()
 			delay = 0,
 			animation = gen_animation.quadratic({ easing = "out", duration = 4000, unit = "total" }),
 		},
-		symbol = "┇",
+		-- symbol = "┇",
+		symbol = "",
+		options = { try_as_border = true },
 	})
 end
 return M

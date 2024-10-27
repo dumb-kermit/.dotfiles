@@ -2,7 +2,7 @@ local M = { "rose-pine/neovim", name = "rose-pine", event = "UiEnter" }
 
 function M.config()
 	require("rose-pine").setup({
-		variant = "dawn", -- auto, main, moon, or dawn
+		variant = "moon", -- auto, main, moon, or dawn
 		dark_variant = "main", -- main, moon, or dawn
 		dim_inactive_windows = false,
 		extend_background_behind_borders = true,
@@ -78,7 +78,7 @@ function M.config()
 
 	-- vim.cmd("colorscheme rose-pine")
 	-- vim.cmd("colorscheme rose-pine-main")
-	-- vim.cmd("colorscheme rose-pine-moon")
-	vim.cmd("colorscheme rose-pine-dawn")
+	vim.cmd("colorscheme rose-pine-moon")
+	-- vim.cmd("colorscheme rose-pine-dawn")
 end
 return M

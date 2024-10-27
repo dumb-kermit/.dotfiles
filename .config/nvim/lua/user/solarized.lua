@@ -4,7 +4,7 @@ local M = {
 }
 
 function M.config()
-	vim.o.background = "light"
+	vim.o.background = "dark"
 
 	-- default config
 	require("solarized").setup({
@@ -109,7 +109,7 @@ function M.config()
 		-- 		Normal = { fg = colors.fg, bg = colors.bg },
 		-- 	}
 		-- end,
-		palette = "selenized", -- solarized (default) | selenized
+		palette = "solarized", -- solarized (default) | selenized
 		variant = "summer", -- "spring" | "summer" | "autumn" | "winter" (default)
 		error_lens = {
 			text = false,

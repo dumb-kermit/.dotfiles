@@ -11,14 +11,14 @@ function M.config()
 	vim.g.gruvbox_material_current_word = "underline"
 	vim.g.gruvbox_material_diagnostic_virtual_text = "colored"
 	vim.g.gruvbox_material_cursor = "aqua"
-	vim.g.gruvbox_material_background = "soft"
-	vim.g.gruvbox_material_foreground = "mix"
-	vim.g.gruvbox_material_statusline_style = "mix"
+	vim.g.gruvbox_material_background = "hard"
+	vim.g.gruvbox_material_foreground = "original"
+	vim.g.gruvbox_material_statusline_style = "original"
 	vim.g.gruvbox_material_enable_italic = true
 	vim.g.gruvbox_material_lightline_disable_bold = 1
 	vim.g.gruvbox_material_show_eob = 0
 	vim.g.gruvbox_material_better_performance = 1
-	vim.g.gruvbox_material_transparent_background = 2
+	-- vim.g.gruvbox_material_transparent_background = 2
 	vim.cmd.colorscheme("gruvbox-material")
 	-- vim.cmd("hi Fg guifg=#b1c1e1")
 	-- vim.cmd("hi Comment guifg=#606060")

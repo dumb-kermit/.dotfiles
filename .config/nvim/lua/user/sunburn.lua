@@ -6,7 +6,7 @@ local M = {
 
 function M.config()
 	vim.g.sunburn_palette_size = 8
-	-- vim.g.sunburn_bright_variant = true
+	vim.g.sunburn_bright_variant = true
 	vim.cmd.colorscheme("sunburn")
 	vim.cmd("hi EndofBuffer guifg=#181818")
 	vim.cmd("hi CursorLineNr guibg=#181818 guifg=#9880D0")

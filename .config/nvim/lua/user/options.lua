@@ -65,7 +65,7 @@ vim.cmd("let base16colorspace=256")
 vim.cmd("set syntax=on")
 vim.o.wrap = false
 vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
-vim.o.statuscolumn = "%=%l┃"
+-- vim.o.statuscolumn = "%=%l┃"
 -- vim.o.statuscolumn = "%=%l %s%C"
 
 -- Fatter Winbar
@@ -100,6 +100,7 @@ vim.o.mousemodel = "extend"
 
 vim.o.cmdheight = 0
 
+vim.o.cursorline = true
 vim.o.cursorlineopt = "both"
 
 -- vim.o.guifont = "Rec Mono C700:h17:b"
