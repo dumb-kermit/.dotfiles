@@ -24,7 +24,7 @@ function M.config()
 		invert_tabline = false,
 		invert_intend_guides = false,
 		inverse = true, -- invert background for search, diffs, statuslines and errors
-		contrast = "soft", -- can be "hard", "soft" or empty string
+		contrast = "", -- can be "hard", "soft" or empty string
 		palette_overrides = {},
 		overrides = {},
 		dim_inactive = false,
@@ -34,7 +34,7 @@ function M.config()
 	vim.cmd("colorscheme gruvbox")
 	vim.cmd("hi EndOfBuffer guifg=#31302F")
 	vim.cmd("hi SignColumn guibg=#31302F")
-	vim.cmd("hi StatusLine guibg=#31302F guifg=#FFB700")
+	-- vim.cmd("hi StatusLine guibg=#31302F guifg=#FFB700")
 
 	-- vim.cmd("hi EndOfBuffer guifg=#1D2021")
 	-- vim.cmd("hi StatusLine guifg=#1D2021 guibg=#FB4934")

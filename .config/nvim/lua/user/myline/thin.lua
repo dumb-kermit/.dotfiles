@@ -14,16 +14,27 @@ local lualine = require("lualine")
 
 -- [Gruvbox]
 local colors = {
+	bg = "#242424",
+	fg = "#c0caf5",
+	selection = "#242424",
+	comment = "#545454",
+	red = "#ff5555",
+	orange = "#ffcb6b",
+	yellow = "#ffcb6b",
+	green = "#50fa7b",
+	purple = "#c792ea",
+	cyan = "#8be9fd",
+	pink = "#82aaff",
 	-- bg = "#1D2021",
-	bg = "none",
-	fg = "#b1c1e1",
-	shade = "#928374",
-	cyan = "#689D6A",
-	red = "#FA4934",
-	green = "#B9BB27",
-	yellow = "#FE8018",
-	purple = "#D3859B",
-	blue = "#458488",
+	-- bg = "none",
+	-- fg = "#b1c1e1",
+	-- shade = "#928374",
+	-- cyan = "#689D6A",
+	-- red = "#FA4934",
+	-- green = "#B9BB27",
+	-- yellow = "#FE8018",
+	-- purple = "#D3859B",
+	-- blue = "#458488",
 }
 
 local conditions = {
@@ -84,10 +95,17 @@ local function ins_right(component)
 	table.insert(config.sections.lualine_x, component)
 end
 
+-- ins_left({
+-- 	function()
+-- 		return ""
+-- 	end,
+-- 	color = { fg = colors.yellow, gui = "bold" },
+-- })
+
 ins_left({
 	-- mode component
 	function()
-		return "[MODE]"
+		return " "
 	end,
 	color = function()
 		-- auto change color according to neovims mode
@@ -115,8 +133,17 @@ ins_left({
 		}
 		return { fg = mode_color[vim.fn.mode()] }
 	end,
+	color = { bg = colors.yellow, gui = "bold" },
+	separator = { left = "", right = "" },
 	-- padding = { left = 1.5, right = 1.5 },
 })
+
+-- ins_left({
+-- 	function()
+-- 		return ""
+-- 	end,
+-- 	color = { fg = colors.yellow, gui = "bold" },
+-- })
 
 -- ins_left({
 -- 	"mode",
@@ -200,16 +227,16 @@ ins_right({
 		end
 	end,
 	icon = "􀞺 ",
-	color = { fg = colors.shade, gui = "bold" },
+	color = { fg = colors.comment, gui = "bold" },
 	fmt = string.upper,
 })
 
 -- ins_right({
--- require("lazy.status").updates,
--- cond = require("lazy.status").has_updates,
--- padding = { left = 1, right = 2 },
--- color = { fg = colors.green },
--- separator = { right = "" },
+-- 	require("lazy.status").updates,
+-- 	cond = require("lazy.status").has_updates,
+-- 	padding = { left = 1, right = 2 },
+-- 	color = { fg = colors.green },
+-- 	separator = { right = "" },
 -- })
 
 ins_right({ "location", icon = "", color = { fg = colors.cyan, gui = "bold" } })

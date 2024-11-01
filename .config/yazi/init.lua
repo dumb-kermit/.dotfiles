@@ -45,13 +45,13 @@ require("yatline"):setup({
 	style_a = {
 		fg = "green",
 		bg_mode = {
-			normal = "#CDD3E1",
+			normal = "black",
 			select = "yellow",
 			un_set = "red",
 		},
 	},
-	style_b = { bg = "#CDD3E1", fg = "yellow" },
-	style_c = { bg = "#CDD3E1", fg = "cyan" },
+	style_b = { bg = "black", fg = "yellow" },
+	style_c = { bg = "black", fg = "cyan" },
 
 	permissions_t_fg = "green",
 	permissions_r_fg = "yellow",

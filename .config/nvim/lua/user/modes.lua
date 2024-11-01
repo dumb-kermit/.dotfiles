@@ -6,12 +6,13 @@ local M = {
 function M.config()
 	require("modes").setup({
 		colors = {
-			-- bg = "#B9BB27",
+			bg = "#24211E",
+			-- bg = "#918175",
 			-- bg = "", -- Optional bg param, defaults to Normal hl group
-			copy = "#83A598",
-			delete = "#D3859B",
-			insert = "#B9BB27",
-			visual = "#FE8018",
+			copy = "#6E655E",
+			delete = "#BB7843",
+			insert = "#76804A",
+			visual = "#D7C483",
 		},
 
 		-- Set opacity for cursorline and number background

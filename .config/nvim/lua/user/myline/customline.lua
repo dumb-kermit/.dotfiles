@@ -8,101 +8,135 @@ vim.o.showmode = false
 
 --- Keep track of the created HL groups
 -- -@type table<string, boolean>
--- local statusline_hls = {}
+local statusline_hls = {}
 
 -- -@param hl string
 -- -@return string
--- function M.get_or_create_hl(hl)
--- local hl_name = "Statusline" .. hl
--- if not statusline_hls[hl] then
--- local bg_hl = vim.api.nvim_get_hl(0, { name = "StatusLine" })
--- local fg_hl = vim.api.nvim_get_hl(0, { name = hl })
+function M.get_or_create_hl(hl)
+	local hl_name = "Statusline" .. hl
+	if not statusline_hls[hl] then
+		local bg_hl = vim.api.nvim_get_hl(0, { name = "StatusLine" })
+		local fg_hl = vim.api.nvim_get_hl(0, { name = hl })
 
--- vim.api.nvim_set_hl(0, hl_name, { bg = ("#%06x"):format(bg_hl.bg), fg = ("#%06x"):format(fg_hl.fg) })
--- statusline_hls[hl] = true
--- end
+		vim.api.nvim_set_hl(0, hl_name, { bg = ("#%06x"):format(bg_hl.bg), fg = ("#%06x"):format(fg_hl.fg) })
+		statusline_hls[hl] = true
+	end
 
--- return hl_name
--- end
+	return hl_name
+end
 
 --- Current mode module
 ---@return string
 function M.mode_component()
 	-- Note that: \19 = ^S and \22 = ^V.
 	local mode_to_str = {
+		-- n = "N",
+		-- no = "N?",
+		-- nov = "N?",
+		-- noV = "N?",
+		-- ["no\22"] = "N?",
+		-- niI = "Ni",
+		-- niR = "Nr",
+		-- niV = "Nv",
+		-- nt = "Nt",
+		-- v = "V",
+		-- vs = "Vs",
+		-- V = "V_",
+		-- Vs = "Vs",
+		-- ["\22"] = "^V",
+		-- ["\22s"] = "^V",
+		-- s = "S",
+		-- S = "S_",
+		-- ["\19"] = "^S",
+		-- i = "I",
+		-- ic = "Ic",
+		-- ix = "Ix",
+		-- R = "R",
+		-- Rc = "Rc",
+		-- Rx = "Rx",
+		-- Rv = "Rv",
+		-- Rvc = "Rv",
+		-- Rvx = "Rv",
+		-- c = "C",
+		-- cv = "Ex",
+		-- r = "...",
+		-- rm = "M",
+		-- ["r?"] = "?",
+		-- ["!"] = "!",
+		-- t = "T",
 		-- ["n"] = "􀞷  ",
-		["n"] = "NORMAL",
-		["no"] = "OP-PENDING",
-		["nov"] = "OP-PENDING",
-		["noV"] = "OP-PENDING",
-		["no\22"] = "OP-PENDING",
-		["niI"] = "I-NORMAL",
-		["niR"] = "NORMAL",
-		["niV"] = "NORMAL",
-		["nt"] = "NORMAL",
-		["ntT"] = "NORMAL",
-		["v"] = "VISUAL",
-		["vs"] = "VISUAL",
-		["V"] = "V-LINE",
-		["Vs"] = "V-LINE",
-		["\22"] = "V-BLOCK",
-		["\22s"] = "V-BLOCK",
-		["s"] = "SELECT",
-		["S"] = "SELECT",
-		["\19"] = "SELECT",
-		["i"] = "INSERT",
-		["ic"] = "INSERT",
-		["ix"] = "INSERT",
-		["R"] = "REPLACE",
-		["Rc"] = "REPLACE",
-		["Rx"] = "REPLACE",
-		["Rv"] = "VIRT REPLACE",
-		["Rvc"] = "VIRT REPLACE",
-		["Rvx"] = "VIRT REPLACE",
-		["c"] = "COMMAND",
-		["cv"] = "VIM EX",
-		["ce"] = "EX",
-		["r"] = "PROMPT",
-		["rm"] = "MORE",
-		["r?"] = "CONFIRM",
-		["!"] = "SHELL",
-		["t"] = "TERMINAL",
-		-- ["n"] = "NOR",
+		-- ["n"] = "NORMAL",
 		-- ["no"] = "OP-PENDING",
 		-- ["nov"] = "OP-PENDING",
 		-- ["noV"] = "OP-PENDING",
 		-- ["no\22"] = "OP-PENDING",
 		-- ["niI"] = "I-NORMAL",
-		-- ["niR"] = "NOR",
-		-- ["niV"] = "NOR",
-		-- ["nt"] = "NOR",
-		-- ["ntT"] = "NOR",
-		-- ["v"] = "VIS",
-		-- ["vs"] = "VIS",
+		-- ["niR"] = "NORMAL",
+		-- ["niV"] = "NORMAL",
+		-- ["nt"] = "NORMAL",
+		-- ["ntT"] = "NORMAL",
+		-- ["v"] = "VISUAL",
+		-- ["vs"] = "VISUAL",
 		-- ["V"] = "V-LINE",
 		-- ["Vs"] = "V-LINE",
 		-- ["\22"] = "V-BLOCK",
 		-- ["\22s"] = "V-BLOCK",
-		-- ["s"] = "SEL",
-		-- ["S"] = "SEL",
-		-- ["\19"] = "SEL",
-		-- ["i"] = "INS",
-		-- ["ic"] = "INS",
-		-- ["ix"] = "INS",
-		-- ["R"] = "REP",
-		-- ["Rc"] = "REP",
-		-- ["Rx"] = "REP",
+		-- ["s"] = "SELECT",
+		-- ["S"] = "SELECT",
+		-- ["\19"] = "SELECT",
+		-- ["i"] = "INSERT",
+		-- ["ic"] = "INSERT",
+		-- ["ix"] = "INSERT",
+		-- ["R"] = "REPLACE",
+		-- ["Rc"] = "REPLACE",
+		-- ["Rx"] = "REPLACE",
 		-- ["Rv"] = "VIRT REPLACE",
 		-- ["Rvc"] = "VIRT REPLACE",
 		-- ["Rvx"] = "VIRT REPLACE",
-		-- ["c"] = "CMD",
+		-- ["c"] = "COMMAND",
 		-- ["cv"] = "VIM EX",
 		-- ["ce"] = "EX",
-		-- ["r"] = "PRO",
+		-- ["r"] = "PROMPT",
 		-- ["rm"] = "MORE",
 		-- ["r?"] = "CONFIRM",
-		-- ["!"] = "PRO",
-		-- ["t"] = "TER",
+		-- ["!"] = "SHELL",
+		-- ["t"] = "TERMINAL",
+		["n"] = "NOR",
+		["no"] = "OP-PENDING",
+		["nov"] = "OP-PENDING",
+		["noV"] = "OP-PENDING",
+		["no\22"] = "OP-PENDING",
+		["niI"] = "I-NORMAL",
+		["niR"] = "NOR",
+		["niV"] = "NOR",
+		["nt"] = "NOR",
+		["ntT"] = "NOR",
+		["v"] = "VIS",
+		["vs"] = "VIS",
+		["V"] = "V-LINE",
+		["Vs"] = "V-LINE",
+		["\22"] = "V-BLOCK",
+		["\22s"] = "V-BLOCK",
+		["s"] = "SEL",
+		["S"] = "SEL",
+		["\19"] = "SEL",
+		["i"] = "INS",
+		["ic"] = "INS",
+		["ix"] = "INS",
+		["R"] = "REP",
+		["Rc"] = "REP",
+		["Rx"] = "REP",
+		["Rv"] = "VIRT REPLACE",
+		["Rvc"] = "VIRT REPLACE",
+		["Rvx"] = "VIRT REPLACE",
+		["c"] = "CMD",
+		["cv"] = "VIM EX",
+		["ce"] = "EX",
+		["r"] = "PRO",
+		["rm"] = "MORE",
+		["r?"] = "CONFIRM",
+		["!"] = "PRO",
+		["t"] = "TER",
 	}
 	local mode = mode_to_str[vim.api.nvim_get_mode().mode] or "UNKNOWN"
 
@@ -130,10 +164,111 @@ function M.mode_component()
 	return table.concat({
 		-- M.side_marks_component(),
 		" ",
-		string.format("%%#StatuslineModeSeparator%s#" .. icons.misc.heart .. "  ", hl),
+		string.format("%%#StatuslineModeSeparator%s#" .. icons.misc.heart .. " ", hl),
 		-- string.format("%%#StatuslineModeSeparator%s# " .. " ", hl),
 		string.format("%%#StatuslineMode%s#%s", hl, mode),
 		string.format("%%#StatuslineModeSeparator%s#%%", hl),
+		-- "",
+		-- " ",
+	})
+end
+
+function M.mode()
+	local ViMode = {
+		-- get vim current mode, this information will be required by the provider
+		-- and the highlight functions, so we compute it only once per component
+		-- evaluation and store it as a component attribute
+		init = function(self)
+			self.mode = vim.fn.mode(1) -- :h mode()
+		end,
+		-- Now we define some dictionaries to map the output of mode() to the
+		-- corresponding string and color. We can put these into `static` to compute
+		-- them at initialisation time.
+		static = {
+			mode_names = { -- change the strings if you like it vvvvverbose!
+				n = "N",
+				no = "N?",
+				nov = "N?",
+				noV = "N?",
+				["no\22"] = "N?",
+				niI = "Ni",
+				niR = "Nr",
+				niV = "Nv",
+				nt = "Nt",
+				v = "V",
+				vs = "Vs",
+				V = "V_",
+				Vs = "Vs",
+				["\22"] = "^V",
+				["\22s"] = "^V",
+				s = "S",
+				S = "S_",
+				["\19"] = "^S",
+				i = "I",
+				ic = "Ic",
+				ix = "Ix",
+				R = "R",
+				Rc = "Rc",
+				Rx = "Rx",
+				Rv = "Rv",
+				Rvc = "Rv",
+				Rvx = "Rv",
+				c = "C",
+				cv = "Ex",
+				r = "...",
+				rm = "M",
+				["r?"] = "?",
+				["!"] = "!",
+				t = "T",
+			},
+			mode_colors = {
+				n = "red",
+				i = "green",
+				v = "cyan",
+				V = "cyan",
+				["\22"] = "cyan",
+				c = "orange",
+				s = "purple",
+				S = "purple",
+				["\19"] = "purple",
+				R = "orange",
+				r = "orange",
+				["!"] = "red",
+				t = "red",
+			},
+		},
+		-- We can now access the value of mode() that, by now, would have been
+		-- computed by `init()` and use it to index our strings dictionary.
+		-- note how `static` fields become just regular attributes once the
+		-- component is instantiated.
+		-- To be extra meticulous, we can also add some vim statusline syntax to
+		-- control the padding and make sure our string is always at least 2
+		-- characters long. Plus a nice Icon.
+		provider = function(self)
+			return " %2(" .. self.mode_names[self.mode] .. "%)"
+		end,
+		-- Same goes for the highlight. Now the foreground will change according to the current mode.
+		hl = function(self)
+			local mode = self.mode:sub(1, 1) -- get only the first mode character
+			return { fg = self.mode_colors[mode], bold = true }
+		end,
+		-- Re-evaluate the component only on ModeChanged event!
+		-- Also allows the statusline to be re-evaluated when entering operator-pending mode
+		update = {
+			"ModeChanged",
+			pattern = "*:*",
+			callback = vim.schedule_wrap(function()
+				vim.cmd("redrawstatus")
+			end),
+		},
+	}
+	return table.concat({
+		-- M.side_marks_component(),
+		" ",
+		-- string.format("%%#StatuslineModeSeparator%s#" .. icons.misc.heart .. "  ", hl),
+		-- string.format("%%#StatuslineModeSeparator%s# " .. " ", hl),
+		string("%%#StatuslineMode%s#%s", ViMode),
+		string.format("%%#StatuslineModeSeparator%s#%%"),
 	})
 end
 
@@ -159,7 +294,7 @@ function M.filename_component()
 
 	---@type table<string, string>
 	local special_stuff = {
-		["TelescopePrompt"] = "  TELESCOPE",
+		["TelescopePrompt"] = " TELESCOPE",
 		---@diagnostic disable-next-line: param-type-mismatch
 		["oil"] = "[oil] " .. vim.fn.expand("%" --[[@as string]]):sub(7, string.len(vim.fn.expand("%")) - 1),
 		---@diagnostic disable-next-line: param-type-mismatch
@@ -191,6 +326,95 @@ function M.filename_component()
 	local relpath = "%f%m%r"
 	return string.format("%%#StatuslineFilename#%s", filename, relpath)
 end
+
+local ViMode = {
+	-- get vim current mode, this information will be required by the provider
+	-- and the highlight functions, so we compute it only once per component
+	-- evaluation and store it as a component attribute
+	init = function(self)
+		self.mode = vim.fn.mode(1) -- :h mode()
+	end,
+	-- Now we define some dictionaries to map the output of mode() to the
+	-- corresponding string and color. We can put these into `static` to compute
+	-- them at initialisation time.
+	static = {
+		mode_names = { -- change the strings if you like it vvvvverbose!
+			n = "N",
+			no = "N?",
+			nov = "N?",
+			noV = "N?",
+			["no\22"] = "N?",
+			niI = "Ni",
+			niR = "Nr",
+			niV = "Nv",
+			nt = "Nt",
+			v = "V",
+			vs = "Vs",
+			V = "V_",
+			Vs = "Vs",
+			["\22"] = "^V",
+			["\22s"] = "^V",
+			s = "S",
+			S = "S_",
+			["\19"] = "^S",
+			i = "I",
+			ic = "Ic",
+			ix = "Ix",
+			R = "R",
+			Rc = "Rc",
+			Rx = "Rx",
+			Rv = "Rv",
+			Rvc = "Rv",
+			Rvx = "Rv",
+			c = "C",
+			cv = "Ex",
+			r = "...",
+			rm = "M",
+			["r?"] = "?",
+			["!"] = "!",
+			t = "T",
+		},
+		mode_colors = {
+			n = "red",
+			i = "green",
+			v = "cyan",
+			V = "cyan",
+			["\22"] = "cyan",
+			c = "orange",
+			s = "purple",
+			S = "purple",
+			["\19"] = "purple",
+			R = "orange",
+			r = "orange",
+			["!"] = "red",
+			t = "red",
+		},
+	},
+	-- We can now access the value of mode() that, by now, would have been
+	-- computed by `init()` and use it to index our strings dictionary.
+	-- note how `static` fields become just regular attributes once the
+	-- component is instantiated.
+	-- To be extra meticulous, we can also add some vim statusline syntax to
+	-- control the padding and make sure our string is always at least 2
+	-- characters long. Plus a nice Icon.
+	provider = function(self)
+		return " %2(" .. self.mode_names[self.mode] .. "%)"
+	end,
+	-- Same goes for the highlight. Now the foreground will change according to the current mode.
+	hl = function(self)
+		local mode = self.mode:sub(1, 1) -- get only the first mode character
+		return { fg = self.mode_colors[mode], bold = true }
+	end,
+	-- Re-evaluate the component only on ModeChanged event!
+	-- Also allows the statusline to be re-evaluated when entering operator-pending mode
+	update = {
+		"ModeChanged",
+		pattern = "*:*",
+		callback = vim.schedule_wrap(function()
+			vim.cmd("redrawstatus")
+		end),
+	},
+}
 
 --- Git status (if any)
 ---@return string
@@ -440,7 +664,7 @@ function M.lsp_component()
 	-- local encoding = vim.opt.fileencoding:get()
 	-- return encoding ~= "" and string.format("%%#StatuslineModeSeparatorOther# %s", encoding) or ""
 	local clients = vim.lsp.get_clients({ bufnr = 0 })
-	local icon = "  "
+	local icon = ""
 
 	if next(clients) == nil then
 		return string.format("%%#StatuslineLSPIconNone#%s %%#StatuslineWhite#NULL", icon)
@@ -460,7 +684,7 @@ function M.position_component()
 
 	return table.concat({
 		-- "%#StatuslinePosSeparator#l: ",
-		string.format("  %%#StatuslineCurrentLine#%d", line),
+		string.format(" %%#StatuslineCurrentLine#%d", line),
 		string.format("%%#StatuslinePosSeparator#/%d", line_count),
 		string.format(":%%#StatuslineColumnIndicator#%d", col),
 		--" ",
@@ -528,6 +752,7 @@ function M.render()
 		concat_components({
 			-- M.side_marks_component(),
 			-- M.filetype_component(),
+			-- ViMode,
 			M.mode_component(),
 			M.filename_component(),
 			M.git_component(),

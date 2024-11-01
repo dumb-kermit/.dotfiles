@@ -12,66 +12,6 @@ return {
             require "configs.lspconfig"
         end,
     },
-    -- { "folke/which-key.nvim",
-        -- event = "VeryLazy",
-        -- keys = {{"<space>"}},
-        -- config = true,
-    -- },
-["folke/which-key.nvim"] = {
-disable = true,
-},
-        {
-        'echasnovski/mini.clue',
-        -- enabled = false,
-        version = false,
-        keys = { { '<leader>' } },
-        config = function()
-            local miniclue = require 'mini.clue'
-            miniclue.setup {
-                triggers = {
-                    -- Leader triggers
-                    { mode = 'n', keys = '<Leader>' },
-                    { mode = 'x', keys = '<Leader>' },
-
-                    -- Built-in completion
-                    { mode = 'i', keys = '<C-x>' },
-
-                    -- `g` key
-                    { mode = 'n', keys = 'g' },
-                    { mode = 'x', keys = 'g' },
-
-                    -- Marks
-                    { mode = 'n', keys = "'" },
-                    { mode = 'n', keys = '`' },
-                    { mode = 'x', keys = "'" },
-                    { mode = 'x', keys = '`' },
-
-                    -- Registers
-                    { mode = 'n', keys = '"' },
-                    { mode = 'x', keys = '"' },
-                    { mode = 'i', keys = '<C-r>' },
-                    { mode = 'c', keys = '<C-r>' },
-
-                    -- Window commands
-                    { mode = 'n', keys = '<C-w>' },
-
-                    -- `z` key
-                    { mode = 'n', keys = 'z' },
-                    { mode = 'x', keys = 'z' },
-                },
-
-                clues = {
-                    -- Enhance this by adding descriptions for <Leader> mapping groups
-                    miniclue.gen_clues.builtin_completion(),
-                    miniclue.gen_clues.g(),
-                    miniclue.gen_clues.marks(),
-                    miniclue.gen_clues.registers(),
-                    miniclue.gen_clues.windows(),
-                    miniclue.gen_clues.z(),
-                },
-            }
-        end,
-    },
     { 'HiPhish/rainbow-delimiters.nvim',
         enabled = false,
         event = 'BufReadPost',
@@ -348,10 +288,10 @@ disable = true,
 	})
 end
     },
---        { "folke/which-key.nvim", enabled = false, },
+       { "folke/which-key.nvim", enabled = false, },
   {
     'echasnovski/mini.clue',
-    enabled = false,
+    -- enabled = false,
     lazy = false,
     version = false,
     keys = { { '<leader>' } },
@@ -462,7 +402,10 @@ end
                 },
                 -- symbol = "▏",
                 -- symbol = '│',
-                symbol = '',
+                -- symbol = '',
+                -- symbol = "↓",
+                -- symbol = "󰁕",
+                symbol = " ",
                 options = { try_as_border = true },
             })
             vim.api.nvim_create_autocmd('FileType', {
@@ -510,10 +453,10 @@ end
             })
         end
     },
-    -- {
-    -- 'lewis6991/gitsigns.nvim',
-    -- enabled = false,
-    -- },
+    {
+    'lewis6991/gitsigns.nvim',
+    enabled = false,
+    },
     {
         'echasnovski/mini.diff',
         -- enabled = false,

@@ -39,3 +39,8 @@ vim.schedule(function()
 end)
 
 require "autocmd"
+require "custom.launch"
+
+spec "custom.base46"
+spec "custom.nvui"
+require "configs.lazy"

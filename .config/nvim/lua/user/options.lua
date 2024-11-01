@@ -34,8 +34,8 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
--- vim.opt.signcolumn = "yes:1"
-vim.opt.signcolumn = "number"
+vim.opt.signcolumn = "yes:1"
+-- vim.opt.signcolumn = "number"
 
 -- Decrease update time
 vim.opt.updatetime = 5
@@ -98,7 +98,7 @@ vim.o.virtualedit = "block"
 
 vim.o.mousemodel = "extend"
 
-vim.o.cmdheight = 0
+vim.o.cmdheight = 1
 
 vim.o.cursorline = true
 vim.o.cursorlineopt = "both"

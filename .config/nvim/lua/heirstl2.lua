@@ -225,23 +225,67 @@ local Ruler = {
 	provider = "%7(%l/%3L%):%2c %P",
 }
 
+local Dropbar = {
+	condition = function(self)
+		self.data = vim.tbl_get(dropbar.bars or {}, vim.api.nvim_get_current_buf(), vim.api.nvim_get_current_win())
+		return self.data
+	end,
+	static = { dropbar_on_click_string = "v:lua.dropbar.callbacks.buf%s.win%s.fn%s" },
+	init = function(self)
+		local components = self.data.components
+		local children = {}
+		for i, c in ipairs(components) do
+			local child = {
+				{
+					hl = c.icon_hl,
+					provider = c.icon:gsub("%%", "%%%%"),
+				},
+				{
+					hl = c.name_hl,
+					provider = c.name:gsub("%%", "%%%%"),
+				},
+				on_click = {
+					callback = self.dropbar_on_click_string:format(self.data.buf, self.data.win, i),
+					name = "heirline_dropbar",
+				},
+			}
+			if i < #components then
+				local sep = self.data.separator
+				table.insert(child, {
+					provider = sep.icon,
+					hl = sep.icon_hl,
+					on_click = {
+						callback = self.dropbar_on_click_string:format(self.data.buf, self.data.win, i + 1),
+					},
+				})
+			end
+			table.insert(children, child)
+		end
+		self.child = self:new(children, 1)
+	end,
+	provider = function(self)
+		return self.child:eval()
+	end,
+}
+
 ViMode = utils.surround({ "", "" }, "bright_bg", { ViMode, Snippets })
 
 local DefaultStatusline = {
 	ViMode,
 	Space,
+	-- Space,
 	FileSize,
-	FileNameBlock,
-	FileType,
-	Space,
+	-- Space,
+	-- FileNameBlock,
+	-- Space,
+	-- FileType,
+	-- Space,
 	Align,
+	Dropbar,
 	Align,
 	Space,
 	Ruler,
 }
-
-local Align = { provider = "%=" }
-local Space = { provider = " " }
 
 require("heirline").setup({ statusline = DefaultStatusline })
 -- we're done.

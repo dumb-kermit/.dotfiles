@@ -1,10 +1,18 @@
 local M = {
 	"Bekaboo/dropbar.nvim",
-        event = "BufReadPre",
+	lazy = false,
+	-- event = "BufReadPre",
 }
 
+M.config = function()
+	-- require("dropbar").setup({
+	-- 	bar = {
+	-- 		enable = false,
+	-- 	},
+	-- })
+end
 --[[ M.config = function() ]]
-        -- require"dropbar".setup()
+-- require"dropbar".setup()
 -- 	local dropbar = require("dropbar")
 -- 	local sources = require("dropbar.source")
 -- 	local utils = require("dropbar.sources")

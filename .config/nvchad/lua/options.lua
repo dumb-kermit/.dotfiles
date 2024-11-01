@@ -63,7 +63,7 @@ vim.o.wrap = false
 vim.o.foldcolumn = "0"
 vim.o.foldenable = true
 -- vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
-vim.o.statuscolumn = "%=%l%s%C┃"
+-- vim.o.statuscolumn = "%=%l%s%C┃"
 
 -- Fatter Winbar
 vim.opt.fillchars = {

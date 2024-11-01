@@ -42,7 +42,8 @@ count_selected = { fg = "white", bg = "yellow" }
 
 # Border
 # border_symbol = "│"
-border_symbol= "┃"
+# border_symbol= "┃"
+border_symbol = " "
 border_style  = { fg = "lightred" }
 
 # Highlighting

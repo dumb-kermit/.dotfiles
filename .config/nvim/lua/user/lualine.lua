@@ -7,10 +7,13 @@ local M = {
 }
 
 function M.config()
+	vim.g.qf_disable_statusline = 1
+	vim.opt.laststatus = 3
+	vim.o.showmode = false
 	-- require("lualine").setup()
 	-- require("user.myline.bubbles")
 	-- require("user.myline.thin")
-	require("user.myline.evil_lualine")
+	-- require("user.myline.evil_lualine")
 	-- require("user.myline.statusline")
 	-- require("lualine").setup({
 	-- options = {

@@ -78,19 +78,19 @@ function M.config()
 			local shade = color.shade
 			local tint = color.tint
 			return {
-				-- fg = "#bebebe",
+				fg = "#b1c1e1",
 				-- green = "#7D9A00",
 				-- red = "#E33300",
 				-- blue = "#0090D8",
 				-- yellow = "#C08000",
 				-- cyan = "#58D1EB",
 				-- violet = "#B87EFF",
-				-- base03 = "#1C1B19",
-				-- base04 = "#1C1B19",
+				base03 = "#1C1B19",
+				base04 = "#1C1B19",
 				-- fg = lighten(colors.base00, 2),
 				-- bg = colors.base03,
 				-- bg = darken(colors.base03, 20),
-				-- bg = "#1B1813",
+				bg = "#1B1813",
 				-- base03 = "#002530",
 				-- bg = "#242423",
 				-- bg = "#1c1b19",

@@ -89,5 +89,6 @@ eval "function _tide_on_fish_exit --on-event fish_exit
     set -e $prompt_var
     tput cup $COLUMNS 0
 end"
-tput cup $COLUMNS 0
 
+#oozz -c green -C -b fesh
+tput cup $COLUMNS 0

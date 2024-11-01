@@ -26,11 +26,11 @@ function M.config()
 			display = {
 				render_limit = 16, -- How many LSP messages to show at once
 				done_ttl = 30, -- How long a message should persist after completion
-				done_icon = "✔", -- Icon shown when all LSP progress tasks are complete
+				done_icon = " ", -- Icon shown when all LSP progress tasks are complete
 				done_style = "Constant", -- Highlight group for completed LSP tasks
 				progress_ttl = math.huge, -- How long a message should persist when in progress
 				-- Icon shown when LSP progress tasks are in progress
-				progress_icon = { pattern = "dots", period = 1 },
+				progress_icon = { pattern = "dots_pulse", period = 2 },
 				-- Highlight group for in-progress LSP tasks
 				progress_style = "WarningMsg",
 				group_style = "Title", -- Highlight group for group name (LSP server name)
@@ -61,6 +61,7 @@ function M.config()
 
 		-- Options related to notification subsystem
 		notification = {
+			-- icon_on_left = true,
 			poll_rate = 10, -- How frequently to update and render notifications
 			filter = vim.log.levels.INFO, -- Minimum notifications level
 			history_size = 128, -- Number of removed messages to retain in history
@@ -76,7 +77,7 @@ function M.config()
 
 			-- Options related to how notifications are rendered as text
 			view = {
-				stack_upwards = false, -- Display notification items from bottom to top
+				stack_upwards = true, -- Display notification items from bottom to top
 				icon_separator = " ", -- Separator between group name and icon
 				group_separator = "---", -- Separator between notification groups
 				-- Highlight group used for group separator
@@ -89,19 +90,19 @@ function M.config()
 
 			-- Options related to the notification window and buffer
 			window = {
-				normal_hl = "Comment", -- Base highlight group in the notification window
+				normal_hl = "NormalFloat", -- Base highlight group in the notification window
 				winblend = 100, -- Background color opacity in the notification window
 				border = "none", -- Border around the notification window
 				zindex = 45, -- Stacking priority of the notification window
 				max_width = 0, -- Maximum width of the notification window
 				max_height = 0, -- Maximum height of the notification window
-				x_padding = 4, -- Padding from right edge of window boundary
-				y_padding = 0, -- Padding from bottom edge of window boundary
-				align = "top", -- How to align the notification window
+				x_padding = 2, -- Padding from right edge of window boundary
+				y_padding = 2, -- Padding from bottom edge of window boundary
+				align = "bottom", -- How to align the notification window
 				relative = "editor", -- What the notification window position is relative to
 			},
 		},
-
+		-- spinner = "pipe", -- animation shown when tasks are ongoing
 		-- Options related to integrating with other plugins
 		integration = {
 			["nvim-tree"] = {

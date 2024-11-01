@@ -110,12 +110,16 @@ local Diagnostics = {
 
 	condition = conditions.has_diagnostics,
 
-	-- static = {
-	--     error_icon = vim.fn.sign_getdefined("DiagnosticSignError")[1].text,
-	--     warn_icon = vim.fn.sign_getdefined("DiagnosticSignWarn")[1].text,
-	--     info_icon = vim.fn.sign_getdefined("DiagnosticSignInfo")[1].text,
-	--     hint_icon = vim.fn.sign_getdefined("DiagnosticSignHint")[1].text,
-	-- },
+	static = {
+		error_icon = "x",
+		warn_icon = "!",
+		info_icon = "?",
+		hint_icon = "+",
+		-- error_icon = vim.fn.sign_getdefined("DiagnosticSignError")[1].text,
+		-- warn_icon = vim.fn.sign_getdefined("DiagnosticSignWarn")[1].text,
+		-- info_icon = vim.fn.sign_getdefined("DiagnosticSignInfo")[1].text,
+		-- hint_icon = vim.fn.sign_getdefined("DiagnosticSignHint")[1].text,
+	},
 
 	init = function(self)
 		self.errors = #vim.diagnostic.get(0, { severity = vim.diagnostic.severity.ERROR })
@@ -167,20 +171,20 @@ local FileNameBlock = {
 }
 -- We can now define some children separately and add them later
 
-local FileIcon = {
-	init = function(self)
-		local filename = self.filename
-		local extension = vim.fn.fnamemodify(filename, ":e")
-		self.icon, self.icon_color =
-			require("nvim-web-devicons").get_icon_color(filename, extension, { default = true })
-	end,
-	provider = function(self)
-		return self.icon and (self.icon .. " ")
-	end,
-	hl = function(self)
-		return { fg = self.icon_color }
-	end,
-}
+-- local FileIcon = {
+-- 	init = function(self)
+-- 		local filename = self.filename
+-- 		local extension = vim.fn.fnamemodify(filename, ":e")
+-- 		self.icon, self.icon_color =
+-- 			require("nvim-web-devicons").get_icon_color(filename, extension, { default = true })
+-- 	end,
+-- 	provider = function(self)
+-- 		return self.icon and (self.icon .. " ")
+-- 	end,
+-- 	hl = function(self)
+-- 		return { fg = self.icon_color }
+-- 	end,
+-- }
 
 local FileName = {
 	provider = function(self)
@@ -188,7 +192,7 @@ local FileName = {
 		-- options, see :h filename-modifers
 		local filename = vim.fn.fnamemodify(self.filename, ":.")
 		if filename == "" then
-			return "[No Name]"
+			return "[NO NAME]"
 		end
 		-- now, if the filename would occupy more than 1/4th of the available
 		-- space, we trim the file path to its initials
@@ -235,7 +239,7 @@ local FileNameModifer = {
 -- let's add the children to our FileNameBlock component
 FileNameBlock = utils.insert(
 	FileNameBlock,
-	FileIcon,
+	-- FileIcon,
 	utils.insert(FileNameModifer, FileName), -- a new table where FileName is a child of FileNameModifier
 	FileFlags,
 	{ provider = "%<" } -- this means that the statusline is cut here when there's not enough space
@@ -253,7 +257,7 @@ local ViMode = {
 	-- them at initialisation time.
 	static = {
 		mode_names = { -- change the strings if you like it vvvvverbose!
-			n = "N",
+			n = "NOR",
 			no = "N?",
 			nov = "N?",
 			noV = "N?",
@@ -262,7 +266,7 @@ local ViMode = {
 			niR = "Nr",
 			niV = "Nv",
 			nt = "Nt",
-			v = "V",
+			v = "VIS",
 			vs = "Vs",
 			V = "V_",
 			Vs = "Vs",
@@ -271,22 +275,22 @@ local ViMode = {
 			s = "S",
 			S = "S_",
 			["\19"] = "^S",
-			i = "I",
+			i = "INS",
 			ic = "Ic",
 			ix = "Ix",
-			R = "R",
+			R = "REP",
 			Rc = "Rc",
 			Rx = "Rx",
 			Rv = "Rv",
 			Rvc = "Rv",
 			Rvx = "Rv",
-			c = "C",
+			c = "CMD",
 			cv = "Ex",
 			r = "...",
 			rm = "M",
 			["r?"] = "?",
 			["!"] = "!",
-			t = "T",
+			t = "TER",
 		},
 		mode_colors = {
 			n = "red",

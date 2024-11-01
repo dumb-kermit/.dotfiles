@@ -2,7 +2,7 @@
 deps = [{ use = "yazi-rs/plugins:full-border", rev = "49137fe" }, { use = "imsi32/yatline", rev = "7b56434" }, { use = "Ape/simple-status", rev = "709f653" }, { use = "KKV9/command", rev = "dc9b483" }, { use = "dedukun/relative-motions", rev = "6aecfcd" }, { use = "yazi-rs/plugins:jump-to-char", rev = "4f1d0ae" }, { use = "Reledia/glow", rev = "f52b382" }, { use = "dawsers/toggle-view", rev = "e59afb0" }, { use = "dawsers/dual-pane", rev = "8471e06" }]
 
 [flavor]
-deps = []
+deps = [{ use = "kmlupreti/ayu-dark", rev = "8d38bfd" }]
 
 # [flavor]
 # deps = [{ use = "dangooddd/kanagawa", rev = "b32f205" }, { use = "bennyyip/gruvbox-dark", rev = "c204853" }, { use = "yazi-rs/flavors:catppuccin-macchiato", rev = "d479f67" }]

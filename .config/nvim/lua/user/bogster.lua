@@ -4,6 +4,7 @@ local M = {
 }
 
 function M.config()
+	vim.cmd("set background=dark")
 	vim.cmd("colorscheme bogster")
 end
 return M

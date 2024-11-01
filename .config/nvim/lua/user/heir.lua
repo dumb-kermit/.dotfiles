@@ -4,6 +4,10 @@ local M = {
 }
 
 function M.config()
-	require("heirstl2")
+	vim.g.qf_disable_statusline = 1
+	vim.opt.laststatus = 3
+	vim.o.showmode = false
+	require("heirstl")
+	-- require("user.heirl")
 end
 return M

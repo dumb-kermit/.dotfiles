@@ -3,13 +3,13 @@
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [manager]
-ratio          = [ 0, 4, 9 ]
+ratio          = [ 0, 3, 10 ]
 sort_by        = "alphabetical"
 sort_sensitive = false
 sort_reverse   = false
 sort_dir_first = true
 sort_translit  = true 
-linemode       = "size_and_mtime"
+# linemode       = "size_and_mtime"
 show_hidden    = true
 show_symlink   = true
 scrolloff      = 200

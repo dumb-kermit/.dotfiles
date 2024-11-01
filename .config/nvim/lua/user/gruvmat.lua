@@ -12,8 +12,8 @@ function M.config()
 	vim.g.gruvbox_material_diagnostic_virtual_text = "colored"
 	vim.g.gruvbox_material_cursor = "aqua"
 	vim.g.gruvbox_material_background = "hard"
-	vim.g.gruvbox_material_foreground = "original"
-	vim.g.gruvbox_material_statusline_style = "original"
+	vim.g.gruvbox_material_foreground = "mix"
+	vim.g.gruvbox_material_statusline_style = "mix"
 	vim.g.gruvbox_material_enable_italic = true
 	vim.g.gruvbox_material_lightline_disable_bold = 1
 	vim.g.gruvbox_material_show_eob = 0

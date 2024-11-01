@@ -19,6 +19,7 @@ function M.config()
 	vim.cmd("hi WhichKeyNormal guibg=#1C1B19")
 	vim.cmd("hi StatusLine guibg=#1c1b19 guifg=#dfa922")
 
+	vim.cmd("hi MiniStatuslineFilename guibg=none guifg=#dfa922")
 	-- vim.cmd "hi TelescopeBorder guifg=#1c1b19"
 end
 

@@ -98,3 +98,10 @@ nvim
 z dev
 ls
 q
+clear
+cd Documents/pics/porno/2024/
+ls
+eza
+lsd
+q
+exit

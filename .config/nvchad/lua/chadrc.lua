@@ -6,14 +6,13 @@
 local M = {}
 
 M.base46 = {
-	theme = "solarized8",
+	theme = "monekai",
     -- transparency = true,
 
 	hl_override = {
         NvDashAscii = { link = "String" },
         NvDashButtons = { link = "Property" },
         NvDashlazy = { link = "Number" },
-        -- Normal = { bg = "#1C1c1c" },
         -- EndOfBuffer = { fg = "#1C1B1A" },
 
         -- SOLARIZED8
@@ -65,7 +64,7 @@ M.ui = {
     telescope = { style = "borderless" }, -- borderless / bordered
 
     statusline = {
-      theme = "minimal", -- default/vscode/vscode_colored/minimal
+      theme = "vscode", -- default/vscode/vscode_colored/minimal
       -- default/round/block/arrow separators work only for default statusline theme
       -- round and block will work for minimal theme only
       separator_style = "round",

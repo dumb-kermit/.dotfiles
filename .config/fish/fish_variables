@@ -49,18 +49,18 @@ SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _tide_left_items:example\x1egit\x1echaracter
 SETUVAR _tide_prompt_30605:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x2d\x3e\x3e\x20\x2econfig\x1b\x5b33m\x20\u25cf\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b90m\ue780\x2011m\x2015\x2e25s\x1b\x5b90m\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b32m\U00102060\x20\x2020\x2e18\x2e0\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
 SETUVAR _tide_prompt_37705:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\uf178\x20\x20hk_nep\x1b\x5b32m\x20\u25cf\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b93m0\x2e012s\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
-SETUVAR _tide_prompt_48798:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\uf178\x20\x20hk_nep\x1b\x5b32m\x20\u25cf\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b93m15\x2e838s\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
+SETUVAR _tide_prompt_54642:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x2d\x3e\x3e\x20hk_nep\x1b\x5b32m\x20\u25cf\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b93m6m\x2030\x2e762s\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
+SETUVAR _tide_prompt_55933:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x2d\x3e\x3e\x20\x2edotfiles\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b92m\uf408\x20\x20\x1b\x5b37m\x1b\x5b92mmain\x1b\x5b91m\x1b\x5b92m\x1b\x5b92m\x1b\x5b91m\x1b\x5b93m\x1b\x5b93m\x20\U0010005e\x20580\x1b\x5b94m\x20\U0010005a\x2031\x1b\x5b32m\x20\u25cf\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b93m0\x2e016s\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
 SETUVAR _tide_prompt_57153:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\uf178\x20\x20hk_nep\x1b\x5b32m\x20\u25cf\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
-SETUVAR _tide_prompt_59148:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\uf178\x20\x20\x2edotfiles\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b92m\uf408\x20\x20\x1b\x5b37m\x1b\x5b92mmain\x1b\x5b91m\x1b\x5b92m\x1b\x5b92m\x1b\x5b91m\x1b\x5b93m\x1b\x5b93m\x20\U0010005e\x20553\x1b\x5b94m\x20\U0010005a\x2010\x1b\x5b32m\x20\u25cf\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b93m32\x2e645s\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
 SETUVAR _tide_prompt_70168:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\uf178\x20\x20hk_nep\x1b\x5b32m\x20\u25cf\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b93m7\x2e357s\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
 SETUVAR _tide_prompt_71972:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\uf178\x20\x20hk_nep\x1b\x5b32m\x20\u25cf\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm
 SETUVAR _tide_right_items:status\x1ecmd_duration\x1econtext
-SETUVAR fish_color_autosuggestion:brblack
+SETUVAR fish_color_autosuggestion:brblack\x1e\x2d\x2dunderline
 SETUVAR fish_color_cancel:\x2dr
-SETUVAR fish_color_command:blue
-SETUVAR fish_color_comment:red
-SETUVAR fish_color_cwd:green
-SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_command:yellow
+SETUVAR fish_color_comment:brblack
+SETUVAR fish_color_cwd:blue\x1e\x2d\x2ditalic
+SETUVAR fish_color_cwd_root:red\x1e\x2d\x2dunderline
 SETUVAR fish_color_end:green
 SETUVAR fish_color_error:brred
 SETUVAR fish_color_escape:brcyan
@@ -70,7 +70,7 @@ SETUVAR fish_color_host:normal
 SETUVAR fish_color_host_remote:yellow
 SETUVAR fish_color_keyword:blue
 SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
-SETUVAR fish_color_normal:normal
+SETUVAR fish_color_normal:yellow
 SETUVAR fish_color_operator:brcyan
 SETUVAR fish_color_option:cyan
 SETUVAR fish_color_param:cyan
@@ -81,11 +81,11 @@ SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrbl
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
-SETUVAR --export fish_function_path:/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig//fish/functions\x1e/opt/homebrew/etc/fish/functions\x1e/Users/hk_nep/\x2elocal/share/fish/vendor_functions\x2ed\x1e/opt/homebrew/Cellar/fish/3\x2e7\x2e1/share/fish/vendor_functions\x2ed\x1e/opt/homebrew/share/fish/vendor_functions\x2ed\x1e/opt/homebrew/Cellar/fish/3\x2e7\x2e1/share/fish/functions
+SETUVAR --export fish_function_path:/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig/fish/custom\x1e/Users/hk_nep/\x2econfig//fish/functions\x1e/opt/homebrew/etc/fish/functions\x1e/Users/hk_nep/\x2elocal/share/fish/vendor_functions\x2ed\x1e/opt/homebrew/Cellar/fish/3\x2e7\x2e1/share/fish/vendor_functions\x2ed\x1e/opt/homebrew/share/fish/vendor_functions\x2ed\x1e/opt/homebrew/Cellar/fish/3\x2e7\x2e1/share/fish/functions\x1e/Users/hk_nep/\x2elocal/bin/powerline/bindings/fish\x1e/Users/hk_nep/\x2elocal/bin/powerline/bindings/fish\x1e/Users/hk_nep/\x2elocal/bin/powerline/bindings/fish\x1e/Users/hk_nep/\x2elocal/bin/powerline/bindings/fish\x1e/Users/hk_nep/\x2elocal/bin/powerline/bindings/fish\x1e/Users/hk_nep/\x2elocal/bin/powerline/bindings/fish\x1e/Users/hk_nep/\x2elocal/bin/powerline/bindings/fish\x1e/Users/hk_nep/\x2elocal/bin/powerline/bindings/fish
 SETUVAR fish_key_bindings:fish_default_key_bindings
-SETUVAR fish_pager_color_background:\x1d
-SETUVAR fish_pager_color_completion:normal
-SETUVAR fish_pager_color_description:yellow\x1e\x2di
+SETUVAR fish_pager_color_background:\x2d\x2dbackground\x3d
+SETUVAR fish_pager_color_completion:D5A344
+SETUVAR fish_pager_color_description:748342
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_secondary_background:\x1d
@@ -156,8 +156,8 @@ SETUVAR tide_docker_icon:\uf308
 SETUVAR tide_elixir_bg_color:normal
 SETUVAR tide_elixir_color:magenta
 SETUVAR tide_elixir_icon:\ue62d
-SETUVAR tide_example_color:121218
-SETUVAR tide_example_icon:\uf178\x20
+SETUVAR tide_example_color:C5633A\x1e\x2d\x2ditalics
+SETUVAR tide_example_icon:\x2d\x3e\x3e
 SETUVAR tide_gcloud_bg_color:normal
 SETUVAR tide_gcloud_color:blue
 SETUVAR tide_gcloud_icon:\uf7ac
@@ -218,9 +218,9 @@ SETUVAR tide_pulumi_bg_color:normal
 SETUVAR tide_pulumi_color:yellow
 SETUVAR tide_pulumi_icon:\uf1b2
 SETUVAR tide_pwd_bg_color:\x1d
-SETUVAR tide_pwd_color_anchors:\x1d
-SETUVAR tide_pwd_color_dirs:\x1d
-SETUVAR tide_pwd_color_truncated_dirs:\x1d
+SETUVAR tide_pwd_color_anchors:brblack\x1e\x2d\x2dunderline
+SETUVAR tide_pwd_color_dirs:C5633A\x1e\x2d\x2ditalics
+SETUVAR tide_pwd_color_truncated_dirs:AAC2E4\x1e\x2d\x2ditalics
 SETUVAR tide_pwd_icon:\x3d\x3e
 SETUVAR tide_pwd_icon_home:\x3d\x3e
 SETUVAR tide_pwd_icon_unwritable:\uf023

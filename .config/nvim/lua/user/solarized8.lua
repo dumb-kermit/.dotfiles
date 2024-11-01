@@ -7,8 +7,9 @@ local M = {
 function M.config()
 	vim.cmd("set background=dark")
 	-- vim.cmd("set notermguicolors")
-	vim.cmd("let g:solarized_statusline = normal")
-	vim.cmd("let g:solarized_visibility = high")
+	-- vim.cmd("let g:solarized_statusline = normal")
+	-- vim.cmd("let g:solarized_visibility = high")
+	vim.g.solarized_visibility = "low"
 	vim.cmd("colorscheme solarized8")
 	-- vim.cmd("hi EndOfBuffer ctermfg=black")
 	-- vim.cmd("hi LineNr ctermbg=black ctermfg=8")

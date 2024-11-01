@@ -47,6 +47,11 @@ on = [ "<C-3>" ]
 run = "plugin --sync toggle-view --args=preview"
 desc = "TOGGLE PREVIEW"
 
+# [[manager.prepend_keymap]]
+# on = [ "Z" ]
+# run = "plugin --args=interactive"
+# desc = "TOGGLE PREVIEW"
+
 [manager]
 
 keymap = [
@@ -88,6 +93,7 @@ keymap = [
 	{ on = "L", run = "forward", desc = "Go forward to the next directory" },
 
 	# Seeking
+    # { on = "Z", run = "shell --orphan --interactive 'z '" }, 
 	{ on = "K", run = "seek -5", desc = "Seek up 5 units in the preview" },
 	{ on = "J", run = "seek 5",  desc = "Seek down 5 units in the preview" },
 
