@@ -50,6 +50,9 @@ function M.config()
 	-- vim.cmd("hi TelescopeBorder guifg=#222222 guibg=none")
 	-- vim.cmd("hi TelescopePromptBorder guifg=#222222 guibg=none")
 	-- vim.cmd("hi TelescopePromptNormal guibg=none guifg=#bc6630")
+	--
+	vim.cmd("hi Comment guifg=#464646 cterm=italic gui=italic")
+	vim.cmd("hi String guifg=#c3d0e8 cterm=italic gui=italic")
 end
 
 return M

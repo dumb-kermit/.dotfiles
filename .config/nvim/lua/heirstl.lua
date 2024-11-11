@@ -4,8 +4,10 @@ local conditions = require("heirline.conditions")
 local utils = require("heirline.utils")
 
 local colors = {
-	bright_bg = utils.get_highlight("Folded").bg,
-	bright_fg = utils.get_highlight("Folded").fg,
+	-- bright_bg = utils.get_highlight("Folded").bg,
+	-- bright_fg = utils.get_highlight("Folded").fg,
+	bright_fg = "#719796",
+	bright_bg = "#002D37",
 	red = utils.get_highlight("DiagnosticError").fg,
 	dark_red = utils.get_highlight("DiffDelete").bg,
 	green = utils.get_highlight("String").fg,
@@ -22,6 +24,10 @@ local colors = {
 	git_add = utils.get_highlight("diffAdded").fg,
 	git_change = utils.get_highlight("diffChanged").fg,
 }
+local bgrd = "#A5AFCE"
+
+-- local colors = require("tokyonight.colors").setup() -- pass in any of the config options as explained above
+-- local util = require("tokyonight.util")
 
 local WorkDir = {
 	init = function(self)
@@ -29,7 +35,7 @@ local WorkDir = {
 		local cwd = vim.fn.getcwd(0)
 		self.cwd = vim.fn.fnamemodify(cwd, ":~")
 	end,
-	hl = { fg = "blue", bold = true },
+	hl = { fg = colors.blue, bold = true },
 
 	flexible = 1,
 
@@ -211,7 +217,7 @@ local FileFlags = {
 			return vim.bo.modified
 		end,
 		provider = "[+]",
-		hl = { fg = "green" },
+		hl = { fg = colors.green },
 	},
 	{
 		condition = function()
@@ -231,7 +237,7 @@ local FileNameModifer = {
 	hl = function()
 		if vim.bo.modified then
 			-- use `force` because we need to override the child's hl foreground
-			return { fg = "cyan", bold = true, force = true }
+			return { fg = colors.cyan, bold = true, force = true }
 		end
 	end,
 }
@@ -293,19 +299,19 @@ local ViMode = {
 			t = "TER",
 		},
 		mode_colors = {
-			n = "red",
-			i = "green",
-			v = "cyan",
-			V = "cyan",
-			["\22"] = "cyan",
+			n = colors.red,
+			i = colors.green,
+			v = colors.cyan,
+			V = colors.cyan,
+			["\22"] = colors.cyan,
 			c = "orange",
 			s = "purple",
 			S = "purple",
 			["\19"] = "purple",
 			R = "orange",
 			r = "orange",
-			["!"] = "red",
-			t = "red",
+			["!"] = colors.red,
+			t = colors.red,
 		},
 	},
 	-- We can now access the value of mode() that, by now, would have been
@@ -399,7 +405,7 @@ local ScrollBar = {
 		local i = math.floor((curr_line - 1) / lines * #self.sbar) + 1
 		return string.rep(self.sbar[i], 2)
 	end,
-	hl = { fg = "blue", bg = "bright_bg" },
+	hl = { fg = colors.blue, bg = bgrd },
 }
 
 local LSPActive = {
@@ -417,7 +423,7 @@ local LSPActive = {
 		end
 		return " [" .. table.concat(names, " ") .. "]"
 	end,
-	hl = { fg = "green", bold = true },
+	hl = { fg = colors.green, bold = true },
 }
 
 -- I personally use it only to display progress messages!
@@ -470,10 +476,10 @@ local TerminalName = {
 		local tname, _ = vim.api.nvim_buf_get_name(0):gsub(".*:", "")
 		return " " .. tname
 	end,
-	hl = { fg = "blue", bold = true },
+	hl = { fg = colors.blue, bold = true },
 }
 
-ViMode = utils.surround({ "", "" }, "bright_bg", { ViMode, Snippets })
+ViMode = utils.surround({ "", "" }, bgrd, { ViMode, Snippets })
 
 local DefaultStatusline = {
 	ViMode,

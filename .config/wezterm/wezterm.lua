@@ -124,7 +124,7 @@ config.window_padding = {
 -- 		}),
 -- 	},
 -- }
--- config.font_size = 20.00
+-- config.font_size = 21.50
 
 -- config.font = wezterm.font_with_fallback({ { family = "Berkeley Mono", weight = "Bold" }, "SF Mono" })
 -- config.font_size = 18.50
@@ -141,31 +141,31 @@ config.window_padding = {
 -- config.cell_width = 0.95
 -- config.line_height = 0.84
 
-config.font = wezterm.font_with_fallback({
-	{
-		family = "AT Name Mono Variable",
-		weight = "Regular",
-		harfbuzz_features = {
-			"calt=1",
-			"liga=1",
-			"kern=1",
-			"ccmp=1",
-			"mark=1",
-			"mkmk=1",
-			"ss13=1",
-			"ss14=1",
-			"ss16=1",
-			"ss05=0",
-			"zero=1",
-			"case=1",
-			"dlig=1",
-		},
-	},
-	"SF Mono",
-})
-config.font_size = 20.00
-config.cell_width = 0.92
-config.line_height = 0.94
+-- config.font = wezterm.font_with_fallback({
+-- 	{
+-- 		family = "AT Name Mono Variable",
+-- 		weight = "Regular",
+-- 		harfbuzz_features = {
+-- 			"calt=1",
+-- 			"liga=1",
+-- 			"kern=1",
+-- 			"ccmp=1",
+-- 			"mark=1",
+-- 			"mkmk=1",
+-- 			"ss13=1",
+-- 			"ss14=1",
+-- 			"ss16=1",
+-- 			"ss05=0",
+-- 			"zero=1",
+-- 			"case=1",
+-- 			"dlig=1",
+-- 		},
+-- 	},
+-- 	"SF Mono",
+-- })
+-- config.font_size = 18.50
+-- config.cell_width = 0.92
+-- config.line_height = 0.94
 
 -- config.font = wezterm.font_with_fallback({
 -- 	{
@@ -214,10 +214,12 @@ config.line_height = 0.94
 -- config.line_height = 0.90
 
 -- config.font = wezterm.font_with_fallback({ { family = "X MD IO Trial Medium", weight = "Bold" }, "SF Mono" })
--- config.font = wezterm.font_with_fallback({ { family = "XMDIOTrial Nerd Font Mono", weight = "Bold" }, "SF Mono" })
--- config.font_size = 19.50
--- config.cell_width = 0.98
--- config.line_height = 0.90
+config.font = wezterm.font_with_fallback({ { family = "XMDIOTrial Nerd Font Mono", weight = "Thin" }, "SF Mono" })
+config.font_size = 19.00
+config.cell_width = 0.94
+config.line_height = 0.90
+
+-- config.font = wezterm.font_with_fallback({ { family = "XMDIOTrial Nerd Font Mono", weight = "Black" }, "SF Mono" })
 
 -- config.font = wezterm.font_with_fallback({ { family = "XMDIOTrial Nerd Font Mono", weight = "Bold" }, "SF Mono" })
 -- config.font_rules = {
@@ -353,7 +355,7 @@ config.line_height = 0.94
 
 -- config.font = wezterm.font_with_fallback({
 -- 	{
--- 		family = "Rec Mono CF360",
+-- 		family = "Rec Mono F320",
 -- 		weight = "Bold",
 -- 		harfbuzz_features = { "calt=1", "liga=1", "ccmp=1", "ss03=1", "ss04=1" },
 -- 	},
@@ -386,8 +388,8 @@ config.line_height = 0.94
 config.bold_brightens_ansi_colors = "BrightOnly"
 config.freetype_load_flags = "FORCE_AUTOHINT"
 config.freetype_load_target = "Light"
--- config.freetype_render_target = "HorizontalLcd"
-config.freetype_render_target = "Normal"
+config.freetype_render_target = "HorizontalLcd"
+-- config.freetype_render_target = "Normal"
 
 -- config.color_scheme = "flexoki-dark"
 -- config.color_scheme = "PaperColor Dark (base16)"
@@ -401,8 +403,8 @@ config.freetype_render_target = "Normal"
 -- config.color_scheme = "Frontend Delight (Gogh)"
 -- config.color_scheme = "Sonokai (Gogh)"
 -- config.color_scheme = "Gruvbox Material (Gogh)"
--- config.color_scheme = "tokyonight_day"
-config.color_scheme = "Gruvbox Dark (Gogh)"
+config.color_scheme = "tokyonight_day"
+-- config.color_scheme = "Gruvbox Dark (Gogh)"
 -- config.color_scheme = "Hardcore (Gogh)"
 -- config.color_scheme = "Gruber (base16)"
 -- config.color_scheme = "Solarized (dark) (terminal.sexy)"

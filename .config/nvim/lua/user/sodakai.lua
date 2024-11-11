@@ -4,8 +4,9 @@ local M = {
 }
 
 function M.config()
+	vim.cmd("set background=dark")
 	require("monokai").setup({})
-	require("monokai").setup({ palette = require("monokai").classic })
+	require("monokai").setup({ palette = require("monokai").soda })
 end
 
 return M

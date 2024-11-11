@@ -16,6 +16,7 @@ function M.config()
 		{ "╰" },
 		{ "│" },
 	}
+	-- require("user.noicehack")
 	require("noice").setup({
 		cmdline = {
 			enabled = true, -- enables the Noice cmdline UI
@@ -30,8 +31,8 @@ function M.config()
 				-- title: set to anything or empty string to hide
 				-- cmdline = { title = "", pattern = "^:", icon = " ", lang = "vim" },
 				-- cmdline = { title = "", pattern = "^:", icon = " ", lang = "vim" },
-				cmdline = { title = "", pattern = "^:", icon = " ", lang = "vim" },
-				-- cmdline = { title = "", pattern = "^:", icon = "●", lang = "vim" },
+				-- cmdline = { title = "", pattern = "^:", icon = " ", lang = "vim" },
+				cmdline = { title = "", pattern = "^:", icon = "●", lang = "vim" },
 				search_down = { kind = "search", pattern = "^/", icon = " ", lang = "regex" },
 				search_up = { kind = "search", pattern = "^%?", icon = " ", lang = "regex" },
 				-- search_down = { kind = "search", pattern = "^/", icon = " 􁾨 ", lang = "regex" },
@@ -48,7 +49,7 @@ function M.config()
 		},
 		lsp = {
 			progress = {
-				enabled = false,
+				enabled = true,
 				view = "mini",
 			},
 			message = {
@@ -64,6 +65,9 @@ function M.config()
 		messages = {
 			enabled = true,
 			view = "mini",
+			view_error = "mini", -- view for errors
+			view_warn = "mini", -- view for warnings
+			view_history = "mini", -- view for :messages
 		},
 		popupmenu = {
 			enabled = true,
@@ -74,50 +78,104 @@ function M.config()
 			view = "mini",
 		},
 		routes = {
-			routes = {
-				{
-					filter = {
-						event = "lsp",
-						kind = "progress",
-						cond = function(message)
-							local client = vim.tbl_get(message.opts, "progress", "client")
-							return client == "lua_ls"
-						end,
+			{
+				filter = {
+					event = "msg_showmode",
+					any = {
+						{ find = "%d+L, %d+B" },
+						{ find = "; after #%d+" },
+						{ find = "; before #%d+" },
 					},
-					opts = { skip = true },
+				},
+				view = "mini",
+			},
+		},
+		-- routes = {
+		--		routes = {
+		--		{
+		--			filter = {
+		--				event = "lsp",
+		--				kind = "progress",
+		--			cond = function(message)
+		--				local client = vim.tbl_get(message.opts, "progress", "client")
+		--				return client == "lua_ls"
+		--			end,
+		--		},
+		--		opts = { skip = true },
+		--	},
+		--			},
+		-- {
+		-- filter = {
+		-- event = "msg_show",
+		-- any = {
+		-- { find = "%d+L, %d+B" },
+		-- { find = "; after #%d+" },
+		-- { find = "; before #%d+" },
+		-- },
+		-- },
+		-- view = "notify",
+		-- },
+		views = {
+			mini = {
+				relative = "editor",
+				align = "message-right",
+				timeout = 30000,
+				position = {
+					-- row = -1,
+					-- col = "50%",
+					row = -1,
+					col = "100%",
+				},
+				win_options = {
+					winblend = 0,
 				},
 			},
-			-- {
-			-- filter = {
-			-- event = "msg_show",
-			-- any = {
-			-- { find = "%d+L, %d+B" },
-			-- { find = "; after #%d+" },
-			-- { find = "; before #%d+" },
+			-- cmdline_popup = {
+			-- 	relative = "editor",
+			-- 	position = {
+			-- 		row = 28,
+			-- 		col = "50%",
+			-- 	},
+			-- 	size = {
+			-- 		width = "auto",
+			-- 		height = "auto",
+			-- 	},
+			-- 	border = {
+			-- 		style = border,
+			-- 		-- padding = { 1, 2 },
+			-- 	},
+			-- 	filter_options = {},
+			-- 	-- win_options = {
+			-- 	-- winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
+			-- 	-- },
 			-- },
-			-- },
-			-- view = "notify",
-			-- },
-		},
-		views = {
 			cmdline_popup = {
-				relative = "editor",
 				position = {
-					row = 28,
+					row = 5,
 					col = "50%",
 				},
 				size = {
-					width = "auto",
+					width = 60,
 					height = "auto",
 				},
-				border = {
-					style = border,
-					-- padding = { 1, 2 },
+			},
+			popupmenu = {
+				relative = "editor",
+				position = {
+					row = 8,
+					col = "50%",
 				},
-				filter_options = {},
-				-- win_options = {
-				-- winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
-				-- },
+				size = {
+					width = 60,
+					height = 10,
+				},
+				border = {
+					style = "rounded",
+					padding = { 0, 1 },
+				},
+				win_options = {
+					winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
+				},
 			},
 		},
 		presets = {

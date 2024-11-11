@@ -5,8 +5,9 @@ local M = {
 }
 
 function M.config()
+	vim.cmd("set background=dark")
 	vim.g.sunburn_palette_size = 8
-	-- vim.g.sunburn_bright_variant = true
+	vim.g.sunburn_bright_variant = true
 	vim.cmd.colorscheme("sunburn")
 	vim.cmd("hi EndofBuffer guifg=#181818")
 	vim.cmd("hi CursorLineNr guibg=#181818 guifg=#9880D0")
@@ -25,6 +26,11 @@ function M.config()
 	vim.cmd("hi WhichKey guibg=none")
 	vim.cmd("hi WhichKeyNormal guibg=none")
 	vim.cmd("hi WhichKeyBorder guibg=none")
+
+	-- vim.cmd("hi Normal guibg=#282828")
+	-- vim.cmd("hi StatusLine guibg=#7E8286 guifg=#282828")
+	-- vim.cmd("hi EndOfBuffer guifg=#282828")
+	-- vim.cmd("hi SignColumn guibg=#282828")
 end
 
 return M

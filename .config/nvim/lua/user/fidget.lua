@@ -1,13 +1,15 @@
 local M = {
 	"j-hui/fidget.nvim",
+	enabled = false,
 	event = "WinEnter",
 }
 
 function M.config()
+	local fidget = require("fidget")
 	require("fidget").setup({
 		-- Options related to LSP progress subsystem
 		progress = {
-			poll_rate = 0, -- How and when to poll for progress messages
+			poll_rate = 10, -- How and when to poll for progress messages
 			suppress_on_insert = false, -- Suppress new messages while in insert mode
 			ignore_done_already = false, -- Ignore new tasks that are already complete
 			ignore_empty_message = false, -- Ignore new tasks that don't contain a message
@@ -24,8 +26,9 @@ function M.config()
 
 			-- Options related to how LSP progress messages are displayed as notifications
 			display = {
+				-- ttl = 0,
 				render_limit = 16, -- How many LSP messages to show at once
-				done_ttl = 30, -- How long a message should persist after completion
+				done_ttl = 2000, -- How long a message should persist after completion
 				done_icon = " ", -- Icon shown when all LSP progress tasks are complete
 				done_style = "Constant", -- Highlight group for completed LSP tasks
 				progress_ttl = math.huge, -- How long a message should persist when in progress
@@ -65,7 +68,7 @@ function M.config()
 			poll_rate = 10, -- How frequently to update and render notifications
 			filter = vim.log.levels.INFO, -- Minimum notifications level
 			history_size = 128, -- Number of removed messages to retain in history
-			override_vim_notify = true, -- Automatically override vim.notify() with Fidget
+			override_vim_notify = true, -- Automatically overre vim.notify() with Fidget
 			-- How to configure notification groups when instantiated
 			configs = { default = require("fidget.notification").default_config },
 			-- Conditionally redirect notifications to another backend
@@ -122,5 +125,16 @@ function M.config()
 			path = string.format("%s/fidget.nvim.log", vim.fn.stdpath("cache")),
 		},
 	})
+	-- Overriding vim.notify with fancy notify if fancy notify exists
+	local notify = require("fidget").notification.notify
+	vim.notify = notify
+	print = function(...)
+		local print_safe_args = {}
+		local _ = { ... }
+		for i = 1, #_ do
+			table.insert(print_safe_args, tostring(_[i]))
+		end
+		notify(table.concat(print_safe_args, " "), "info")
+	end
 end
 return M

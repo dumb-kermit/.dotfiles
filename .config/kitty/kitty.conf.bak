@@ -1,8 +1,8 @@
 #: }}}
 
-cursor_trail 100
-cursor_trail_decay 0.1 0.1
-cursor_trail_start_threshold 1
+cursor_trail 300
+cursor_trail_decay 0.2 0.2
+cursor_trail_start_threshold 2
 
 #: Theme {{{
 
@@ -10,9 +10,14 @@ cursor_trail_start_threshold 1
 # include ./themes/monokai_classic.conf
 # include ./themes/sodakai.conf
 # include ./themes/miasma.conf
+# include ./themes/deplsog.conf
+# include ./themes/depls.conf
+# include ./themes/nort.conf
 # include ./themes/sunburn_new.conf
 # include ./themes/sunburn_original.conf
 # include ./themes/srcery_kitty.conf
+# include ./oxocarbon.conf
+# include ./themes/kitty_gruvbox_.conf
 # include ./themes/frappe.conf
 # include ./themes/latte.conf
 # include ./themes/rose-pine.conf
@@ -26,31 +31,53 @@ cursor_trail_start_threshold 1
 # include ./themes/OneDark.conf
 # include ./themes/vscode-dark.conf
 # include ./themes/gruvpale.conf
+# include ./themes/flatlight.conf
+# include ./themes/flat_hard_light.conf
+# include ./nvim_export.conf
+# include ./themes/night_day_15.conf
+# include ./themes/night_day_25.conf
+include ./themes/daydark.conf
+# include ./challenger-deep.conf
+# include ./solarized_autumn.conf
+# include ./palenight.conf
+# include ./mmnkaiocto.conf
+# include ./monokaiclassic.conf
+# include ./nvim_export.conf
+# include ./_bak/_bak/monokai-nightasty_dark.conf
+# include ./themes/sol_light.conf
+# include ./themes/sel_light.conf
+# include ./themes/sel_autumn.conf
+# include ./themes/papi_light.conf
 # include ./themes/gruvbox_dark_hard.conf
 # include ./themes/gruvbox_dark_soft.conf
 # include ./themes/gruvchad.conf
 # include ./_bak/tm/kanagawa_wave.conf
+# include ./_bak/tm/kanagawa_dragon.conf
 # include ./themes/sonokai-maia.conf
 # include ./themes/sonokai-shusia.conf
 # include ./themes/sonokai-atlantis.conf
 # include ./themes/sonokai-andromeda.conf
 # include ./themes/flexokidark.conf
+# include ./flexr.conf
 # include ./themes/sunburn.conf
 # include ./themes/ronny.conf
 # include ./_bak/tm/monokai_tasty.conf
 # include ./themes/Dracula+.conf
 # include ./themes/NeoSolarized-dark.conf
+# include ./neosolarized.conf
 # include ./themes/NeoSolarized-light.conf
+# include ./themes/paperlight.conf
 # include ./themes/cyberdream.conf
 # include ./themes/cyberdream-light.conf
 # include ./themes/flexoki_light_kt.conf
 # include ./themes/flexoki_dark_kt.conf
 # include ./_bak/tm/flexoki_new.conf
+# include ./themes/flatlight.conf
 # include ./themes/nordic.conf
 # include ./themes/onenord.conf
 # include ./themes/onenord_light.conf
 # include ./themes/doomone-light.conf
-include ./themes/doomone-dark.conf
+# include ./themes/doomone-dark.conf
 # include ./themes/delta.conf
 # include ./themes/retro.conf
 # include ./themes/flexoki_dark.conf
@@ -87,94 +114,7 @@ include ./themes/doomone-dark.conf
 
 #: Fonts {{{
 
-# include ./fonts.conf
-include ./_fonts.conf
-
-# font_family               family='Berkeley Mono' style=Bold features='+calt +ss04'
-# bold_font                 family='Berkeley Mono' style=Bold features='+calt +ss04'
-# italic_font               family='Berkeley Mono' style='Bold' features='+calt +ss04'
-# bold_italic_font          family='Berkeley Mono' style='Bold' features='+calt +ss04'
-# macos_thicken_font        0.42
-# macos_thicken_font        0.80
-# text_composition_strategy legacy 
-# text_composition_strategy platform
-# text_composition_strategy 2.4 10 
-# text_composition_strategy 2.8 60
-# font_size                 18.50 
-# modify_font               cell_width -0.5
-# modify_font               cell_height -2.0
-# modify_font               baseline 2.0
-
-# font_family               family='MD IO' style='Black' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# bold_font                 family='MD IO' style='Black' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# italic_font               family='MD IO Trial' style='Black Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# bold_italic_font          family='MD IO Trial' style='Black Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# macos_thicken_font        0
-
-# italic_font               family='XMDIOTrial Nerd Font Mono' style='Black Black Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# bold_italic_font          family='XMDIOTrial Nerd Font Mono' style='Black Black Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-
-# font_family               family='MD IO' style='Bold' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# bold_font                 family='MD IO' style='Bold' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# italic_font               family='XMDIOTrial Nerd Font Mono' style='Bold Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# bold_italic_font          family='XMDIOTrial Nerd Font Mono' style='Bold Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-
-# font_family               family='MD IO' style='Semibold' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# bold_font                 family='MD IO' style='Semibold' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# italic_font               family='XMDIOTrial Nerd Font Mono' style='Semibold Semibold Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# bold_italic_font          family='XMDIOTrial Nerd Font Mono' style='Semibold Semibold Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
-# text_composition_strategy legacy 
-# font_size                 19.00
-# modify_font               cell_width 0
-# modify_font               cell_height -6.5 
-# modify_font               baseline 6.5
-
-# font_family               family="IBM Plex Mono" style='Bold' features='+ss03 +ss05'
-# bold_font                 family="IBM Plex Mono" style='Bold' features='+ss03 +ss05'
-# italic_font               family="IBM Plex Mono" style='Bold Italic' features='+ss03 +ss05 +ss01 +ss02'
-# bold_italic_font          family="IBM Plex Mono" style='Bold Italic' features='+ss03 +ss05 +ss01 +ss02'
-
-# font_family               family="IBM Plex Mono" style='SemiBold' features='+ss03 +ss05'
-# bold_font                 family="IBM Plex Mono" style='SemiBold' features='+ss03 +ss05'
-# italic_font               family="IBM Plex Mono" style='SemiBold Italic' features='+ss03 +ss05 +ss01 +ss02'
-# bold_italic_font          family="IBM Plex Mono" style='SemiBold Italic' features='+ss03 +ss05 +ss01 +ss02'
-
-# font_family               family="IBM Plex Mono" style='Medium' features='+ss03 +ss05'
-# bold_font                 family="IBM Plex Mono" style='Medium' features='+ss03 +ss05'
-# italic_font               family="IBM Plex Mono" style='Medium Italic' features='+ss03 +ss05 +ss01 +ss02'
-# bold_italic_font          family="IBM Plex Mono" style='Medium Italic' features='+ss03 +ss05 +ss01 +ss02'
-
-# font_family               family="IBM Plex Mono" style='Text' features='+ss03 +ss05'
-# bold_font                 family="IBM Plex Mono" style='Text' features='+ss03 +ss05'
-# italic_font               family="IBM Plex Mono" style='Text Italic' features='+ss03 +ss05 +ss01 +ss02'
-# bold_italic_font          family="IBM Plex Mono" style='Text Italic' features='+ss03 +ss05 +ss01 +ss02'
-
-# font_family               family="IBM Plex Mono" style='Regular' features='+ss03 +ss05'
-# bold_font                 family="IBM Plex Mono" style='Regular' features='+ss03 +ss05'
-# italic_font               family="IBM Plex Mono" style='Italic' features='+ss03 +ss05 +ss01 +ss02'
-# bold_italic_font          family="IBM Plex Mono" style='Italic' features='+ss03 +ss05 +ss01 +ss02'
-
-# font_family               family="IBM Plex Mono" style='Light' features='+ss03 +ss05'
-# bold_font                 family="IBM Plex Mono" style='Light' features='+ss03 +ss05'
-# italic_font               family="IBM Plex Mono" style='Light Italic' features='+ss03 +ss05 +ss01 +ss02'
-# bold_italic_font          family="IBM Plex Mono" style='Light Italic' features='+ss03 +ss05 +ss01 +ss02'
-
-# font_family               family='IBM Plex Mono' style='Thin' features='+ss03 +ss07 +ss05'
-# bold_font                 family='IBM Plex Mono' style='Thin' features='+ss03 +ss07 +ss05'
-# italic_font               family='IBM Plex Mono' style='Thin Italic' features='+ss03 +ss05 +ss01 +ss02'
-# bold_italic_font          family='IBM Plex Mono' style='Thin Italic' features='+ss03 +ss05 +ss01 +ss02'
-
-# font_family               family='IBM Plex Mono' style='ExtraLight' features='+ss03 +ss07 +ss05'
-# bold_font                 family='IBM Plex Mono' style='ExtraLight' features='+ss03 +ss07 +ss05'
-# italic_font               family='IBM Plex Mono' style='ExtraLight Italic' features='+ss03 +ss05 +ss01 +ss02'
-# bold_italic_font          family='IBM Plex Mono' style='ExtraLight Italic' features='+ss03 +ss05 +ss01 +ss02'
-# macos_thicken_font        0
-# text_composition_strategy 1.0 40 
-# font_size                 18.50
-# modify_font               cell_width -0.5
-# modify_font               cell_height -3.0
-# modify_font               baseline 2.5
-
+include ./_fonts.conf 
 
 #: kitty has very powerful font management. You can configure
 #: individual font faces and even specify special fonts for particular
@@ -1045,7 +985,7 @@ window_border_width 0pt
 #: set the vertical and horizontal sides. Three values set top,
 #: horizontal and bottom. Four values set top, right, bottom and left.
 
-# window_padding_width 4
+window_padding_width 0 
 
 #: The window padding (in pts) (blank area between the text and the
 #: window border). A single value sets all four sides. Two values set
@@ -1201,7 +1141,7 @@ tab_bar_margin_height 14.0 0.0
 #: The second number is the margin between the tab bar and the
 #: contents of the current tab.
 
-tab_bar_style separator 
+tab_bar_style powerline 
 
 #: The tab bar style, can be one of:
 
@@ -2076,7 +2016,7 @@ macos_custom_beam_cursor yes
 #: mouse cursor invisible on dual GPU machines. Changing this option
 #: by reloading the config is not supported.
 
-macos_colorspace default
+# macos_colorspace default
 # macos_colorspace srgb
 
 #: The colorspace in which to interpret terminal colors. The default
@@ -2928,14 +2868,28 @@ mouse_map                   ctrl+shift+right press ungrabbed mouse_show_command_
 # italic_font      auto
 # bold_italic_font auto
 
+# # BEGIN_KITTY_FONTS
+# font_family      family="PragmataPro Mono Liga Z"
+# bold_font        auto
+# italic_font      auto
+# bold_italic_font auto
+# # END_KITTY_FONTS
 
 
 # BEGIN_KITTY_FONTS
+# font_family      family='Array Mono' style=Regular
+# bold_font        family='Array Mono' style=Regular
+# italic_font      family='Array Mono' style='Regular Italic'
+# bold_italic_font family='Array Mono' style='Regular Italic'
+font_size                 17.00
+modify_font               cell_width -0.5
+modify_font               cell_height 0
+modify_font               baseline 1.5
 
+
+# BEGIN_KITTY_FONTS
+# font_family      family='ABC Diatype Rounded Mono Variable' variable_name=ABCDiatypeRoundedMonoVariable wght=700 wdth=100 slnt=0 MONO=1 features='+ss03 +ss04 +ss08 +ss15 +ss12 +ss16 +liga +kern +ss11 +ss10 +ss09 +ss14 +calt +zero'
+# bold_font        auto
+# italic_font      family='ABC Diatype Rounded Mono Variable' variable_name=ABCDiatypeRoundedMonoVariable wght=700 wdth=100 slnt=-12 MONO=1 features='+ss03 +ss04 +ss08 +ss15 +ss12 +ss16 +liga +kern +ss11 +ss10 +ss09 +ss14 +calt +zero'
+# bold_italic_font family='ABC Diatype Rounded Mono Variable' variable_name=ABCDiatypeRoundedMonoVariable wdth=100 slnt=-12 MONO=1 wght=700 features='+ss03 +ss04 +ss08 +ss15 +ss12 +ss16 +liga +kern +ss11 +ss10 +ss09 +ss14 +calt +zero'
 # END_KITTY_FONTS
-
-
-# BEGIN_KITTY_THEME
-# Gruvbox Material Dark Soft
-# include current-theme.conf
-# END_KITTY_THEME

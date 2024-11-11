@@ -5,7 +5,7 @@ local M = {
 
 function M.config()
 	local opts = {
-		dark_style_background = "#040412", -- default, dark, transparent, #color
+		-- dark_style_background = "#040412", -- default, dark, transparent, #color
 		light_style_background = "default", -- default, dark, transparent, #color
 		hl_styles = {
 			-- Style to be applied to selected syntax groups: (See `:help nvim_set_hl` for supported keys)

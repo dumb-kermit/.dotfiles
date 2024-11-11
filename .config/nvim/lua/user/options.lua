@@ -34,8 +34,8 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
-vim.opt.signcolumn = "yes:1"
--- vim.opt.signcolumn = "number"
+-- vim.opt.signcolumn = "yes:1"
+vim.opt.signcolumn = "number"
 
 -- Decrease update time
 vim.opt.updatetime = 5
@@ -81,7 +81,7 @@ vim.opt.fillchars = {
 
 vim.g.neovide_text_gamma = 0.8
 vim.g.neovide_text_contrast = 0.1
-vim.o.linespace = -1
+vim.o.linespace = -4
 
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -104,8 +104,13 @@ vim.o.cursorline = true
 vim.o.cursorlineopt = "both"
 
 -- vim.o.guifont = "Rec Mono C700:h17:b"
+-- vim.o.guifont = "IBM Plex Mono:h17"
 -- vim.o.guifont = "Rec Mono F420:h16.5:b"
+-- vim.o.guifont = "Rec Mono 75-620:h17.5:b"
+vim.o.guifont = "MD IO Trial:h19:b"
+-- vim.o.guifont = "Rec Mono 5-7-305:h17.5"
 -- vim.o.guifont = "Codelia:h17:b"
 -- vim.o.guifont = "ATNameMonoVariableG Nerd Font:h17:b"
-vim.o.guifont = "Graebenbach Mono:h19"
--- vim.o.guifont = "Operator Mono SSm Nerd Lig:h16"
+-- vim.o.guifont = "Graebenbach Mono:h19"
+-- vim.o.guifont = "Operator Mono SSm Nerd Lig:h16:b"
+-- vim.o.guifont = "PragmataPro Mono Liga e:h21"

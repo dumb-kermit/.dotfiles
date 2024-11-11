@@ -10,7 +10,7 @@ function M.config()
 	---@field on_colors fun(colors: ColorScheme)
 	---@field on_highlights fun(highlights: tokyonight.Highlights, colors: ColorScheme)
 	require("tokyonight").setup({
-		style = "storm", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
+		style = "day", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
 		light_style = "day", -- The theme is used when the background is set to light
 		transparent = false, -- Enable this to disable setting the background color
 		terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
@@ -19,14 +19,14 @@ function M.config()
 			-- Value is any valid attr-list value for `:help nvim_set_hl`
 			comments = { italic = true },
 			keywords = { italic = true },
-			functions = { italic = true },
+			functions = {},
 			variables = { italic = true },
 			-- constants = { underline = true },
 			-- Background styles. Can be "dark", "transparent" or "normal"
 			sidebars = "transparent", -- style for sidebars, see below
 			floats = "transparent", -- style for floating windows
 		},
-		day_brightness = 0.25, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+		-- day_brightness = 0.18, --Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
 		dim_inactive = false, -- dims inactive windows
 		lualine_bold = false, -- When `true`, section headers in the lualine theme will be bold
 
@@ -34,6 +34,9 @@ function M.config()
 		--- function will be called with a ColorScheme table
 		--@param colors ColorScheme
 		on_colors = function(colors)
+			-- colors.bg = "#ADB5BD"
+			-- colors.bg = "#909DA8"
+			colors.bg = "#b6bfe2"
 			-- colors.bg = "#D5D6DB"
 			-- colors.bg = "#D5D6DB"
 			-- colors.bg = "#CDD3E1"
@@ -51,9 +54,9 @@ function M.config()
 			-- hl.EndOfBuffer = {
 			-- fg = "#E1E2E6",
 			-- }
-			local prompt = "#2d3149"
-			-- local prompt = "#CFD5E4"
-			local stlbg = "#A5AFCE"
+			-- local prompt = "#2d3149"
+			local prompt = "#A5AFCE"
+			-- local stlbg = "#A5AFCE"
 			local mnbg = "#23283B"
 			-- hl.TelescopeNormal = {
 			-- 	bg = c.bg_dark,
@@ -105,10 +108,10 @@ function M.config()
 			-- 	bg = c.bg,
 			-- 	fg = c.cyan,
 			-- }
-			-- hl.StatusLine = {
-			-- 	bg = none,
-			-- 	fg = "#FF747F",
-			-- }
+			hl.StatusLine = {
+				bg = "#C2C8DC",
+				fg = "#035AB3",
+			}
 			-- hl.EndOfBuffer = {
 			-- 	bg = mnbg,
 			-- 	fg = mnbg,
@@ -136,5 +139,7 @@ function M.config()
 	vim.cmd("hi MiniDiffSignDelete guifg=#FF0065")
 	vim.cmd("hi MiniDiffSignChange guifg=#1b1c1d")
 	vim.cmd("hi MiniDiffSignAdd guifg=#8243C4")
+	-- vim.cmd("hi StatusLine guibg=#3157AC guifg=#CDD3E1")
+	vim.cmd("hi StatusLine guifg=#3157AC guibg=none")
 end
 return M

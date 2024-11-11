@@ -10,7 +10,7 @@ function M.config()
 	vim.g.qf_disable_statusline = 1
 	vim.opt.laststatus = 3
 	vim.o.showmode = false
-	-- require("lualine").setup()
+	require("lualine").setup()
 	-- require("user.myline.bubbles")
 	-- require("user.myline.thin")
 	-- require("user.myline.evil_lualine")
@@ -26,21 +26,21 @@ function M.config()
 	-- },
 	-- },
 
-	-- options = {
-	--         component_separators = { left = "", right = "" },
-	--         section_separators = { left = "", right = "" },
-	--         ignore_focus = { "Telescope" },
-	-- theme = "16color",
-	-- },
-	--     sections = {
-	--         -- lualine_a = {},
-	--         lualine_b = { "filetype", "branch" },
-	--         lualine_c = { "diagnostics" },
-	--         lualine_x = { "harpoon2" },
-	--         lualine_y = { "progress" },
-	--         -- lualine_z = {},
-	--     },
-	--     extensions = { "quickfix", "man", "fugitive" },
+	-- 	options = {
+	-- 		component_separators = { left = "", right = "" },
+	-- 		section_separators = { left = "", right = "" },
+	-- 		ignore_focus = { "Telescope" },
+	-- 		-- theme = "16color",
+	-- 	},
+	-- 	sections = {
+	-- 		-- lualine_a = {},
+	-- 		lualine_b = { "filetype", "branch" },
+	-- 		lualine_c = { "diagnostics" },
+	-- 		lualine_x = { "harpoon2" },
+	-- 		lualine_y = { "progress" },
+	-- 		-- lualine_z = {},
+	-- 	},
+	-- 	extensions = { "quickfix", "man", "fugitive" },
 	-- })
 	-- vim.cmd("hi lualine_c_normal guifg=#0090D8 guibg=#1C1B19")
 	-- vim.cmd("hi lualine_b_normal guifg=#FA0026 guibg=#1C1B19")

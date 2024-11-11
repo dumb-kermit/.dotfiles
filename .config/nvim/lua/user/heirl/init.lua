@@ -165,12 +165,12 @@ do
 	}
 end
 
-local HydraHint = {
-	condition = function()
-		return hydra.get_hint()
-	end,
-	provider = hydra.get_hint,
-}
+-- local HydraHint = {
+-- 	condition = function()
+-- 		return hydra.get_hint()
+-- 	end,
+-- 	provider = hydra.get_hint,
+-- }
 
 local FileNameBlock, CurrentPath, FileName
 do
@@ -573,7 +573,7 @@ local StatusLines = {
 		Space,
 		{
 			fallthrough = false,
-			HydraHint,
+			-- HydraHint,
 			{ SearchResults, FileNameBlock },
 		},
 		Space(4),

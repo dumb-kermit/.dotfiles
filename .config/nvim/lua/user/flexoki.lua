@@ -6,7 +6,7 @@ local M = {
 }
 
 function M.config()
-	vim.cmd("set background=dark")
+	-- vim.cmd("set background=dark")
 	vim.cmd("colorscheme flexoki-dark")
 	-- vim.cmd("hi EndofBuffer guibg=#100F0F guifg=#100F0F")
 	-- vim.cmd("hi MiniStatuslineDevinfo guibg=#100F0F guifg=#94989F")
@@ -30,6 +30,7 @@ function M.config()
 	vim.cmd("hi EndOfBuffer guibg=#1C1B1A guifg=#1C1B1A")
 	vim.cmd("hi MsgArea guibg=#1C1B1A guifg=#EA6804")
 	vim.cmd("hi Normal guibg=#1C1B1A")
+	vim.cmd("hi @variable guifg=#b1c1e1")
 end
 
 return M

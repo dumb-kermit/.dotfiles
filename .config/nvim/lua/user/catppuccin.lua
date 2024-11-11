@@ -6,7 +6,7 @@ local M = {
 
 function M.config()
 	require("catppuccin").setup({
-		flavour = "frappe", -- latte, frappe, macchiato, mocha
+		flavour = "latte", -- latte, frappe, macchiato, mocha
 		background = { -- :h background
 			light = "latte",
 			dark = "mocha",

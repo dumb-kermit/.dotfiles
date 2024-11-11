@@ -121,7 +121,7 @@ def _draw_right_status(screen: Screen) -> int:
 
 
 SEPARATOR_SYMBOL, SOFT_SEPARATOR_SYMBOL = ("", "")
-ICON = "  "
+ICON = "􂁠 "
 
 
 def _draw_left_status(

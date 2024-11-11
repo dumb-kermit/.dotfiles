@@ -1,0 +1,202 @@
+# vim:ft=kitty
+
+# font_family               family='TTAutonomousMono Nerd Font Mono' style='Bold' features='+calt +ss01 +dlig +ss04 +ss03 +ss05'
+# bold_font                 family='TTAutonomousMono Nerd Font Mono' style='Bold' features='+calt +ss01 +dlig +ss04 +ss03 +ss05'
+# italic_font               family='TTAutonomousMono Nerd Font Mono' style='Bold Italic' features='+calt +ss01 +dlig +ss04 +ss03 +ss05'
+# bold_italic_font          family='TTAutonomousMono Nerd Font Mono' style='Bold Italic' features='+calt +ss01 +dlig +ss04 +ss03 +ss05'
+# text_composition_strategy legacy
+
+# font_family               family='TTAutonomousMono Nerd Font Mono' style='Regular' features='+calt +ss01 +dlig +ss04 +ss03 +ss05'
+# bold_font                 family='TTAutonomousMono Nerd Font Mono' style='Regular' features='+calt +ss01 +dlig +ss04 +ss03 +ss05'
+# italic_font               family='TTAutonomousMono Nerd Font Mono' style='Italic' features='+calt +ss01 +dlig +ss04 +ss03 +ss05'
+# bold_italic_font          family='TTAutonomousMono Nerd Font Mono' style='Italic' features='+calt +ss01 +dlig +ss04 +ss03 +ss05'
+# text_composition_strategy legacy
+# macos_thicken_font        0.80
+# font_size                 18.00
+# modify_font               cell_width -0.5
+# modify_font               cell_height -6.5
+# modify_font               baseline 4.5
+
+# font_family               family=Lilex variable_name=Lilex wght=920 features='cv05=1 +case +ccmp +ss04 +calt cv08=1 cv11=1 cv06=1 cv09=1 cv03=0 +ss01 cv07=1 +zero'
+# bold_font                 family=Lilex variable_name=Lilex wght=920 features='cv05=1 +case +ccmp +ss04 +calt cv08=1 cv11=1 cv06=1 cv09=1 cv03=0 +ss01 cv07=1 +zero'
+# italic_font               family=Lilex variable_name=Lilex wght=920 features='cv05=1 +case +ccmp +ss04 +calt cv08=1 cv11=1 cv06=1 cv09=1 cv03=0 +ss01 cv07=1 +zero'
+# bold_italic_font          family=Lilex variable_name=Lilex wght=920 features='cv05=1 +case +ccmp +ss04 +calt cv08=1 cv11=1 cv06=1 cv09=1 cv03=0 +ss01 cv07=1 +zero'
+# text_composition_strategy 2.8 10
+# macos_thicken_font        0.75
+# font_size                 18.00
+# modify_font               cell_width -0.5
+# modify_font               cell_height -4.5 
+# modify_font               baseline 4.0
+
+# font_family               family='Cartograph CF' style='Bold' features='+calt +case +cpsp +liga +ss03 +ss02 +vert +vrt2 +mark +mkmk'
+# bold_font                 family='Cartograph CF' style='Bold' features='+calt +case +cpsp +liga +ss03 +ss02 +vert +vrt2 +mark +mkmk'
+# italic_font               family='Cartograph CF' style='Bold Italic' features='+calt +case +cpsp +liga +vert +vrt2 +mark +mkmk'
+# bold_italic_font          family='Cartograph CF' style='Bold Italic' features='+calt +case +cpsp +liga +vert +vrt2 +mark +mkmk'
+# text_composition_strategy legacy
+# macos_thicken_font        0.80
+# font_size                 18.50
+# modify_font               cell_width -0.5
+# modify_font               cell_height -8.5
+# modify_font               baseline 6.5
+
+# font_family               family='Cartograph CF' style='Thin' features='+calt +case +cpsp +liga +ss03 -ss02 +vert +vrt2 +mark +mkmk'
+# bold_font                 family='Cartograph CF' style='Thin' features='+calt +case +cpsp +liga +ss03 -ss02 +vert +vrt2 +mark +mkmk'
+# italic_font               family='Cartograph CF' style='Thin Italic' features='+calt +case +cpsp +liga +vert +vrt2 +mark +mkmk'
+# bold_italic_font          family='Cartograph CF' style='Thin Italic' features='+calt +case +cpsp +liga +vert +vrt2 +mark +mkmk'
+# text_composition_strategy legacy
+# macos_thicken_font        0.80
+# font_size                 17.50
+# modify_font               cell_width -1.5
+# modify_font               cell_height -8.5
+# modify_font               baseline 6.5
+
+# font_family               family='Liga Space Mono' style=Bold features="-liga"
+# bold_font                 family='Liga Space Mono' style=Bold features="-liga"
+# italic_font               family='Liga Space Mono' style='Bold Italic' features="-liga"
+# bold_italic_font          family='Liga Space Mono' style='Bold Italic' features="-liga"
+# text_composition_strategy legacy
+# macos_thicken_font        0.60 
+# font_size                 18.50
+# modify_font               cell_width -0.5
+# modify_font               cell_height -6.5
+# modify_font               baseline 4.5
+# font_family               family='Liga Space Mono' style=Regular features="-liga"
+# bold_font                 family='Liga Space Mono' style=Regular features="-liga"
+# italic_font               family='Liga Space Mono' style='Italic' features="-liga"
+# bold_italic_font          family='Liga Space Mono' style='Italic' features="-liga"
+# text_composition_strategy legacy
+# macos_thicken_font        0.00 
+# font_size                 19.50
+# modify_font               cell_width -1.0
+# modify_font               cell_height -7.0
+# modify_font               baseline 4.5
+
+# font_family               family='AT Name Mono Variable' variable_name=  wght=400 features='+dlig +case +ccmp +mark +mkmk +ss16 +ss14 +ss13'
+# bold_font                 family='AT Name Mono Variable' variable_name=  wght=400 features='+dlig +case +ccmp +mark +mkmk +ss16 +ss14 +ss13'
+# italic_font               family='AT Name Mono Variable x' variable_name=  wght=400 features='+kern +dlig +case +ccmp +mark +mkmk +ss16 +ss14 +ss13 +ss02 +ss04 +ss08'
+# bold_italic_font          family='AT Name Mono Variable x' variable_name=  wght=400 features='+kern +dlig +case +ccmp +mark +mkmk +ss16 +ss14 +ss13 +ss02 +ss04 +ss08'
+# macos_thicken_font        0.75
+# text_composition_strategy 4.2 50
+# font_size                 18.50
+# modify_font               cell_width -0.5
+# modify_font               cell_height 0
+# modify_font               baseline 1
+
+# font_family               family='Berkeley Mono' style=Bold features='+calt +ss04'
+# bold_font                 family='Berkeley Mono' style=Bold features='+calt +ss04'
+# italic_font               family='Berkeley Mono' style='Bold' features='+calt +ss04'
+# bold_italic_font          family='Berkeley Mono' style='Bold' features='+calt +ss04'
+# macos_thicken_font        1.20
+# text_composition_strategy platform
+# font_size                 18.50 
+# modify_font               cell_width 0
+# modify_font               cell_height -1.0
+# modify_font               baseline 1.0
+
+# font_family               family='Operator Mono SSm Nerd Lig' style='Bold' features='+ss08 +ss09 +ss01 +ss03 +ss05 +ss04 +ss07'
+# bold_font                 family='Operator Mono SSm Nerd Lig' style='Bold' features='+ss08 +ss09 +ss01 +ss03 +ss05 +ss04 +ss07'
+# italic_font               family='Operator Mono SSm Nerd Lig' style='Bold Italic' features='+ss08 +ss09 +ss01 +ss03 +ss05 +ss04 +ss07 +calt +liga'
+# bold_italic_font          family='Operator Mono SSm Nerd Lig' style='Bold Italic' features='+ss08 +ss09 +ss01 +ss03 +ss05 +ss04 +ss07 +liga +calt'
+# text_composition_strategy 2.8 30
+
+# font_family               family='Operator Mono SSm Nerd Lig' style='Light' features='+ss08 +ss09 +ss01 +ss03 +ss05 +ss04 +ss07'
+# bold_font                 family='Operator Mono SSm Nerd Lig' style='Light' features='+ss08 +ss09 +ss01 +ss03 +ss05 +ss04 +ss07'
+# italic_font               family='Operator Mono SSm Nerd Lig' style='Light Italic' features='+ss08 +ss09 +ss01 +ss03 +ss05 +ss04 +ss07 +calt +liga'
+# bold_italic_font          family='Operator Mono SSm Nerd Lig' style='Light Italic' features='+ss08 +ss09 +ss01 +ss03 +ss05 +ss04 +ss07 +liga +calt'
+# text_composition_strategy 2.8 30
+# macos_thicken_font        0.75
+# font_size                 16.50
+# modify_font               cell_width -0.5
+# modify_font               cell_height -5.0
+# modify_font               baseline 4.5
+
+# font_family               family='MD IO' style='Black' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_font                 family='MD IO' style='Black' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# italic_font               family='MD IO Trial' style='Black Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_italic_font          family='MD IO Trial' style='Black Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# macos_thicken_font        0
+
+# italic_font               family='XMDIOTrial Nerd Font Mono' style='Black Black Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_italic_font          family='XMDIOTrial Nerd Font Mono' style='Black Black Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+
+# font_family               family='MD IO' style='Bold' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_font                 family='MD IO' style='Bold' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# italic_font               family='XMDIOTrial Nerd Font Mono' style='Bold Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_italic_font          family='XMDIOTrial Nerd Font Mono' style='Bold Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+
+# font_family               family='MD IO' style='Semibold' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_font                 family='MD IO' style='Semibold' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# italic_font               family='XMDIOTrial Nerd Font Mono' style='Semibold Semibold Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_italic_font          family='XMDIOTrial Nerd Font Mono' style='Semibold Semibold Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+
+# font_family      family='XMDIOTrial Nerd Font Mono' style='Medium Medium' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_font        family='XMDIOTrial Nerd Font Mono' style='Medium Medium' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# italic_font      family='XMDIOTrial Nerd Font Mono' style='Medium Medium Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_italic_font family='XMDIOTrial Nerd Font Mono' style='Medium Medium Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+
+# font_family               family='XMDIOTrial Nerd Font Mono' style='Light Light' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_font                 family='XMDIOTrial Nerd Font Mono' style='Light Light' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# italic_font               family='XMDIOTrial Nerd Font Mono' style='Light Light Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_italic_font          family='XMDIOTrial Nerd Font Mono' style='Light Light Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# text_composition_strategy legacy 
+# font_size                 19.00
+# modify_font               cell_width -0.5
+# modify_font               cell_height -5.5 
+# modify_font               baseline 5.5
+
+# font_family               family='MD IO Trial' style='Thin' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_font                 family='MD IO Trial' style='Thin' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# italic_font               family='MD IO Trial' style='Thin Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# bold_italic_font          family='MD IO Trial' style='Thin Italic' features='+ss01 +calt cv01=1 cv02=1 +liga +ss04'
+# macos_thicken_font        0.42
+# font_size                 18.00
+# modify_font               cell_width -0.5
+# modify_font               cell_height -6.5 
+# modify_font               baseline 6.5
+
+# font_family               family="IBM Plex Mono" style='Bold' features='+ss03 +ss05'
+# bold_font                 family="IBM Plex Mono" style='Bold' features='+ss03 +ss05'
+# italic_font               family="IBM Plex Mono" style='Bold Italic' features='+ss03 +ss05 +ss01 +ss02'
+# bold_italic_font          family="IBM Plex Mono" style='Bold Italic' features='+ss03 +ss05 +ss01 +ss02'
+
+# font_family               family="IBM Plex Mono" style='SemiBold' features='+ss03 +ss05'
+# bold_font                 family="IBM Plex Mono" style='SemiBold' features='+ss03 +ss05'
+# italic_font               family="IBM Plex Mono" style='SemiBold Italic' features='+ss03 +ss05 +ss01 +ss02'
+# bold_italic_font          family="IBM Plex Mono" style='SemiBold Italic' features='+ss03 +ss05 +ss01 +ss02'
+
+# font_family               family="IBM Plex Mono" style='Medium' features='+ss03 +ss05'
+# bold_font                 family="IBM Plex Mono" style='Medium' features='+ss03 +ss05'
+# italic_font               family="IBM Plex Mono" style='Medium Italic' features='+ss03 +ss05 +ss01 +ss02'
+# bold_italic_font          family="IBM Plex Mono" style='Medium Italic' features='+ss03 +ss05 +ss01 +ss02'
+
+# font_family               family="IBM Plex Mono" style='Text' features='+ss03 +ss05'
+# bold_font                 family="IBM Plex Mono" style='Text' features='+ss03 +ss05'
+# italic_font               family="IBM Plex Mono" style='Text Italic' features='+ss03 +ss05 +ss01 +ss02'
+# bold_italic_font          family="IBM Plex Mono" style='Text Italic' features='+ss03 +ss05 +ss01 +ss02'
+
+# font_family               family="IBM Plex Mono" style='Regular' features='+ss03 +ss05'
+# bold_font                 family="IBM Plex Mono" style='Regular' features='+ss03 +ss05'
+# italic_font               family="IBM Plex Mono" style='Italic' features='+ss03 +ss05 +ss01 +ss02'
+# bold_italic_font          family="IBM Plex Mono" style='Italic' features='+ss03 +ss05 +ss01 +ss02'
+#
+# font_family               family="IBM Plex Mono" style='Light' features='+ss03 +ss05'
+# bold_font                 family="IBM Plex Mono" style='Light' features='+ss03 +ss05'
+# italic_font               family="IBM Plex Mono" style='Light Italic' features='+ss03 +ss05 +ss01 +ss02'
+# bold_italic_font          family="IBM Plex Mono" style='Light Italic' features='+ss03 +ss05 +ss01 +ss02'
+
+# font_family               family='IBM Plex Mono' style='Thin' features='+ss03 +ss07 +ss05'
+# bold_font                 family='IBM Plex Mono' style='Thin' features='+ss03 +ss07 +ss05'
+# italic_font               family='IBM Plex Mono' style='Thin Italic' features='+ss03 +ss05 +ss01 +ss02'
+# bold_italic_font          family='IBM Plex Mono' style='Thin Italic' features='+ss03 +ss05 +ss01 +ss02'
+
+# font_family               family='IBM Plex Mono' style='ExtraLight' features='+ss03 +ss07 +ss05'
+# bold_font                 family='IBM Plex Mono' style='ExtraLight' features='+ss03 +ss07 +ss05'
+# italic_font               family='IBM Plex Mono' style='ExtraLight Italic' features='+ss03 +ss05 +ss01 +ss02'
+# bold_italic_font          family='IBM Plex Mono' style='ExtraLight Italic' features='+ss03 +ss05 +ss01 +ss02'
+# macos_thicken_font        0.8
+# text_composition_strategy 2.6 10 
+# font_size                 18.00
+# modify_font               cell_width -0.5
+# modify_font               cell_height -4.0
+# modify_font               baseline 3.5
+

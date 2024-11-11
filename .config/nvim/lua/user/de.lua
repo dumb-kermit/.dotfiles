@@ -6,9 +6,9 @@ local M = {
 
 function M.config()
 	vim.cmd("colorscheme darkearth")
-	vim.cmd("hi Identifier guifg=#b1c1e1")
-	vim.cmd("hi Number guifg=#b1c1e1")
-	vim.cmd("hi Type guifg=#b1c1e1 cterm=underline gui=underline")
+	vim.cmd("hi Identifier guifg=#c3d0e8")
+	vim.cmd("hi Number guifg=#c3d0e8")
+	vim.cmd("hi Type guifg=#c3d0e8 cterm=underline gui=underline")
 	vim.cmd("hi EndOfBuffer guifg=#24211E")
 	vim.cmd("hi SignColumn guibg=#24211E")
 	vim.cmd("hi LineNr guibg=#07AEB3")

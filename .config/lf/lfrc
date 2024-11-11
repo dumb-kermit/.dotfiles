@@ -57,34 +57,39 @@ map gp $clear; git pull --rebase || true; echo "press ENTER"; read ENTER
 map gs $clear; git status; echo "PRESS ENTER"; read ENTER
 map gl $clear; git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 # mkdir command. See wiki if you want it to select created dir
-map T :push %mkdir<space>
+map <f-3> :push %mkdir<space>
 # define a custom 'rename' command without prompt for overwrite
 # cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
-map / rename 
+map <f-2> rename 
 # make sure trash folder exists
 %mkdir -p ~/.trash
 # move current file or selected files to trash folder
 # (also see 'man mv' for backup/overwrite options)
 %mkdir -p ~/.trash
 cmd trash %set -f; mv $fx ~/.trash
-map <backspace2> delete 
-map G :fzf_search
+map <f-8> delete 
+map <f-9> :fzf_search
 map z push :z<space>
+map <f-4> push :z<space
 map F fzf_jump
 map f filter
+map <f-10> filter
 map c copy
+map <f-5> copy
+map <f-6> :paste; clear
+map <f-7> cut
 map v :paste; clear
 map x cut
 map w up
 map s down
 map d open
 map a updir
-map Sn :set sortby natural; set info
-map Ss :set sortby size; set info size
-map St :set sortby time; set info time
-map Sa :set sortby atime; set info atime
-map Sc :set sortby ctime; set info ctime
-map Se :set sortby ext; set info
+map <f-12>n :set sortby natural; set info
+map <f-12>s :set sortby size; set info size
+map <f-12>t :set sortby time; set info time
+map <f-12>a :set sortby atime; set info atime
+map <f-12>c :set sortby ctime; set info ctime
+map <f-12>e :set sortby ext; set info
 
 cmd ql &{{
     set -f

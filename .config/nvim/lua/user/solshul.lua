@@ -12,5 +12,6 @@ function M.config()
 	vim.g.solarized_borders = true
 	vim.g.solarized_disable_background = false
 	vim.cmd("colorscheme solarized")
+	vim.cmd("hi StatusLine guibg=#7C9596 guifg=#003742")
 end
 return M

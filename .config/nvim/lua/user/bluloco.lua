@@ -5,7 +5,7 @@ local M = {
 }
 
 function M.config()
-	vim.cmd("set background=light")
+	vim.cmd("set background=dark")
 	vim.cmd("colorscheme bluloco")
 end
 return M
