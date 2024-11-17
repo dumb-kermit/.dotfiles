@@ -10,6 +10,7 @@ function M.config()
 			highlight_inactive_windows = true,
 		},
 	})
-	vim.cmd("colorscheme onedark_dark")
+	-- vim.cmd("colorscheme onedark_dark")
+	vim.cmd("colorscheme onelight")
 end
 return M

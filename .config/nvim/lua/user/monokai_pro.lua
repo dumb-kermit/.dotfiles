@@ -182,15 +182,15 @@ function M.config()
 		-- dimmed5 = "#1A1A1A",
 		-- }
 		-- end,
-		-- overrideScheme = function(cs, p, config, hp)
-		-- 	local cs_override = {}
-		-- 	local calc_bg = hp.blend(p.background, 0.75, "#000000")
-		--
-		-- 	cs_override.editor = {
-		-- 		background = calc_bg,
-		-- 	}
-		-- 	return cs_override
-		-- end,
+		overrideScheme = function(cs, p, config, hp)
+			local cs_override = {}
+			local calc_bg = hp.blend(p.background, 0.75, "#000000")
+
+			cs_override.editor = {
+				background = calc_bg,
+			}
+			return cs_override
+		end,
 		-- -- ---@param c Colorscheme
 		-- override = function(c) end,
 		-- ---@param cs Colorscheme

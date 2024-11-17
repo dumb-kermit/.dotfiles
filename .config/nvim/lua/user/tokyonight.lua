@@ -26,7 +26,7 @@ function M.config()
 			sidebars = "transparent", -- style for sidebars, see below
 			floats = "transparent", -- style for floating windows
 		},
-		-- day_brightness = 0.18, --Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+		day_brightness = 0.25, --Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
 		dim_inactive = false, -- dims inactive windows
 		lualine_bold = false, -- When `true`, section headers in the lualine theme will be bold
 
@@ -34,9 +34,42 @@ function M.config()
 		--- function will be called with a ColorScheme table
 		--@param colors ColorScheme
 		on_colors = function(colors)
+			-- colors.bg = "#D8DEE9"
+			-- colors.fg = "#3E4450"
+			-- colors.red = "#A3454E"
+			-- colors.green = "#75905E"
+			-- colors.blue = "#3E607F"
+			-- colors.purple = "#AD81FF"
+			-- colors.magenta = "#8D6786"
+
+			-- colors.bg = "#b6bfe2"
+			colors.bg = "#c4c8da"
+			colors.fg_dark = "#3760bf"
+			-- colors.cyan = "#38919f"
+			-- colors.orange = "#CB8814"
+			colors.fg_gutter = "#03051f"
+			-- colors.cyan = "#00937a"
+			colors.green = "#336633"
+			colors.green1 = "#336633"
+			colors.green2 = "#5f885f"
+			colors.red = "#D34600"
+			colors.red_bright = "#D34600"
+			colors.purple = "#9066e4"
+			-- colors.magenta = "#971fb0"
+			-- colors.fg = "#4a1da4"
+			-- colors.magenta = "#cf66e4"
+			-- colors.red = "#ff4774"
+			-- colors.red_bright = "#ff4774"
+
+			colors.yellow = "#c96c02"
+			colors.orange = "#c96c02"
+			colors.cyan = "#2e8b57"
+
 			-- colors.bg = "#ADB5BD"
 			-- colors.bg = "#909DA8"
-			colors.bg = "#b6bfe2"
+			-- colors.bg = "#C4C5BB"
+			-- colors.bg = "#D8DEE9"
+			-- colors.bg = "#b6bfe2"
 			-- colors.bg = "#D5D6DB"
 			-- colors.bg = "#D5D6DB"
 			-- colors.bg = "#CDD3E1"

@@ -65,10 +65,47 @@ require("lazy").setup({
 		},
 	},
 	ui = {
+		size = { width = 0.80, height = 0.68 },
+		backdrop = 100,
+		title_pos = "left",
+		pills = true,
+		wrap = false,
 		border = "none",
+		icons = {
+			cmd = " ",
+			config = "",
+			event = " ",
+			favorite = " ",
+			ft = " ",
+			init = " ",
+			import = " ",
+			keys = " ",
+			lazy = "󰒲 ",
+			loaded = "●",
+			not_loaded = "○",
+			plugin = " ",
+			runtime = " ",
+			require = "󰢱 ",
+			source = " ",
+			start = " ",
+			task = "✔ ",
+			list = {
+				"●",
+				"➜",
+				"★",
+				"‒",
+			},
+		},
 	},
 	change_detection = {
 		enabled = true,
 		notify = true,
+	},
+	profiling = {
+		-- Enables extra stats on the debug tab related to the loader cache.
+		-- Additionally gathers stats about all package.loaders
+		loader = true,
+		-- Track each new require in the Lazy profiling tab
+		require = true,
 	},
 })

@@ -44,7 +44,7 @@ count_selected = { fg = "white", bg = "yellow" }
 # border_symbol = "│"
 # border_symbol= "┃"
 border_symbol = " "
-border_style  = { fg = "lightred" }
+border_style  = { fg = "gray" }
 
 # Highlighting
 syntect_theme = "~/.config/bat/themes/ansi2.tmTheme"

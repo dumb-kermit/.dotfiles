@@ -154,3 +154,23 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
 	desc = "load view (folds), when opening file",
 	command = "silent! loadview",
 })
+
+vim.api.nvim_create_autocmd({ "BufEnter" }, {
+	pattern = { "*" },
+	callback = function()
+		vim.cmd("hi LazyNormal guifg=#191F27 guibg=#CBC6C4")
+		vim.cmd("hi! link LazyButton LazyNormal")
+		vim.cmd("hi! link LazyButtonActive LazyNormal")
+	end,
+})
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+	pattern = "base16-shadesmear-light",
+	callback = function()
+		vim.cmd("hi Comment guifg=#b4b5b6")
+		vim.cmd("hi TSComment guifg=#b4b5b6")
+		vim.cmd("hi NonText guibg=#DBDBDB guifg=#DBDBDB")
+		vim.cmd("hi CursorLine guibg=#c4c5c6")
+		vim.cmd("hi StatusLine guibg=#DBDBDB guifg=#10668B")
+	end,
+})
